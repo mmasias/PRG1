@@ -13,7 +13,7 @@
 
 ||
 |:-:|
-![](/imagenes/modelosUML/lenguajesProgramacion.svg)
+![](/images/modelosUML/lenguajesProgramacion.svg)
 Lenguajes de programación (*Autor: Prof. Luis Fernández*)
 
 </div>
@@ -46,7 +46,7 @@ Es esencial comprender las **bases y conceptos teóricos del lenguaje**. Se reco
 |Bajo nivel|Medio nivel|Alto nivel|
 |-|-|-|
 Enfocados a la máquina|Enfocados a la máquina y al desarrollador|Enfocados al desarrollador
-|![](/imagenes/ensamblador.png)|![](/imagenes/c.jpg)|![](/imagenes/javascript.png)
+|![](/images/ensamblador.png)|![](/images/c.jpg)|![](/images/javascript.png)
 código binario, [ensamblador](http://helloworldcollection.de/#Assembler%C2%A0(Win32)), ...​|[C](http://helloworldcollection.de/#C%C2%A0(ANSI)), [C++](http://helloworldcollection.de/#C++)), ...​|[Java](http://helloworldcollection.de/#Java), [Javascript](http://helloworldcollection.de/#JavaScript), [Scala](http://helloworldcollection.de/#Scala), [PHP](http://helloworldcollection.de/#PHP), [Basic](http://helloworldcollection.de/#BASIC), ...
 
 </div>
@@ -58,7 +58,7 @@ código binario, [ensamblador](http://helloworldcollection.de/#Assembler%C2%A0(W
 |Fuertemente Tipados|Debilmente Tipados|Con Inferencia de Tipos
 |:-:|:-:|:-:
 fuerte|debil|inferencia
-![](/imagenes/modelosUML/lenguajeTipoFuerte.svg)|![](/imagenes/modelosUML/lenguajeTipoDebil.svg)|![](/imagenes/modelosUML/lenguajeTipoInferencia.svg)
+![](/images/modelosUML/lenguajeTipoFuerte.svg)|![](/images/modelosUML/lenguajeTipoDebil.svg)|![](/images/modelosUML/lenguajeTipoInferencia.svg)
 Java, …|Javascript, …​|[Typescript](http://helloworldcollection.de/#TypeScript), …​
 
 </div>
@@ -69,7 +69,7 @@ Java, …|Javascript, …​|[Typescript](http://helloworldcollection.de/#TypeSc
 
 |Interpretado|Compilado|Híbrido
 |:-:|:-:|:-:
-|![](/imagenes/modelosUML/lenguajeEjecucionInterpretado.svg)|![](/imagenes/modelosUML/lenguajeEjecucionCompilado.svg)|![](/imagenes/modelosUML/lenguajeEjecucionHibrido.svg)
+|![](/images/modelosUML/lenguajeEjecucionInterpretado.svg)|![](/images/modelosUML/lenguajeEjecucionCompilado.svg)|![](/images/modelosUML/lenguajeEjecucionHibrido.svg)
 Javascript, Typescript, [Python](http://helloworldcollection.de/#Python%C2%A03)|C, C++|Java
 
 |Lenguaje|Tiempo de desarrollo|Tiempo de ejecución|Portabilidad
@@ -105,7 +105,7 @@ Crear un esquema que relacione todos estos paradigmas puede ser un desafío debi
 
 <div align="center">
 
-![](/imagenes/modelosUML/paradigmas.svg)
+![](/images/modelosUML/paradigmas.svg)
 
 </div>
 

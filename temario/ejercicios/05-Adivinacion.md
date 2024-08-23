@@ -39,6 +39,6 @@ C:\>
 
 <div align=center>
 
-![](/imagenes/numerosAdivinacionExplicacion.png)
+![](/images/numerosAdivinacionExplicacion.png)
 
 </div>

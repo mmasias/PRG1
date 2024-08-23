@@ -1,0 +1,20 @@
+@startuml
+
+start
+:Inicio;
+repeat
+  if (Leer) then (0 o B)
+    :Escribir 1;
+    :Mover derecha;
+    stop
+  else (1)
+    :Escribir 0;
+    :Mover izquierda;
+  endif
+repeat while (Leer símbolo) is (1)
+->0 o B;
+:Escribir 1;
+:Mover derecha;
+stop
+
+@enduml

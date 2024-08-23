@@ -62,7 +62,7 @@ class UnaClase {
 
 ||||
 |-|-|-|
-![](/imagenes/modelosUML/metodosEstaticos000.svg)|![](/imagenes/modelosUML/metodosEstaticos001.svg)|![](/imagenes/modelosUML/metodosEstaticos002.svg)|
+![](/images/modelosUML/metodosEstaticos000.svg)|![](/images/modelosUML/metodosEstaticos001.svg)|![](/images/modelosUML/metodosEstaticos002.svg)|
 
 ### Algunas reflexiones...
 

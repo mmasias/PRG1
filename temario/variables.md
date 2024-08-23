@@ -54,7 +54,7 @@ Define el espacio de memoria en el que se almacena el valor de la variable.
 
 |Tipos primitivos|
 |-:|
-|![](/imagenes/modelosUML/tiposPrimitivos.svg)|
+|![](/images/modelosUML/tiposPrimitivos.svg)|
 |*Autor: Prof. Luis Fernández*
 
 </div>

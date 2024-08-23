@@ -12,7 +12,7 @@ Supongamos una implementación del juego de acuerdo a las siguientes pautas:
 
 |Juego|Presentación sugerida 
 |-|- 
-|![](/imagenes/retoWhatcAMole001.png)|![](/imagenes/retoWhatcAMole.png)
+|![](/images/retoWhatcAMole001.png)|![](/images/retoWhatcAMole.png)
 
 </div>
 

@@ -1,0 +1,11 @@
+
+[*] --> q1
+q1 --> q3 : 0/1,R
+q1 --> q3 : B/1,R
+q1 --> q2 : 1/0,L
+q2 --> q3 : 0/1,R
+q2 --> q3 : B/1,R
+q2 --> q2 : 1/0,L
+q3 --> [*]
+
+note "Leido/Escrito, Acción" as n1

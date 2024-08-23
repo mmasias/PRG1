@@ -1,7 +1,7 @@
 
 ## Iterativa indeterminada 0..N
 
-![](/imagenes/modelosUML/repetitiva001.svg)
+![](/images/modelosUML/repetitiva001.svg)
 
 ```java
 while (<expresión>) 
@@ -10,7 +10,7 @@ while (<expresión>)
 
 ## Iterativa indeterminada 1..N
 
-![](/imagenes/modelosUML/repetitiva002.svg)
+![](/images/modelosUML/repetitiva002.svg)
 
 ```java
 do 

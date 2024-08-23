@@ -1,4 +1,4 @@
-# Temario 
+# Temario
 
 - [x] [**Introducción**](00-introduccion.md)
   - [x] [**Algoritmos**](001-Algoritmos.md)
@@ -18,7 +18,3 @@
 ## Temario++
 
 - [x] Artículos varios recopilados en la [carpeta de documentos](/documentos/README.md).
-
----
-
-Con todo esto, [a día de hoy deberíamos saber](aDiaDeHoy.md)...

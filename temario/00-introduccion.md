@@ -4,12 +4,29 @@
 
 La humanidad gracias a sus herramientas y, en particular, al conocimiento (ciencias, ingenierías, etc.​), ha construido grandes sistemas artificiales: acueductos, telares con tarjetas perforadas, red eléctrica, red telefónica, etc.​ para automatizar tareas: simplificar y reutilizar.
 
-- 8000 aec., los sumerios construyen telares para cubrirse.
-- 1642 ec., Blaise Pascal construye la Pascalina, primera calculadora mecánica girando ruedas.
-- 1801 ec., Jacquard construye el primer telar mecánico y automático con tarjetas perforadas para definir los dibujos.
-- 1842 ec., Charles Babbage y Ada Lovalace trabajan sobre la Máquina Analítica, con las tarjetas perforadas de los telares …​ pero no llegó a funcionar aunque Ada ya escribió las primeras líneas de código de la historia.
-- 1884 ec., Hollerith desarrolló la Máquina Tabular de tarjetas perforadas para ordenar el registro de propiedad en la Conquista del Oeste.
-- 1936 ec., Konrad Zuse, ingeniero alemán, diseñó y fabricó la Z1, la que para muchos es la primera computadora programable de la historia.
+|Año|Elemento/Evento|Descripción||
+|-|-|-|-|
+|8000 aec.|[Telar](https://es.wikipedia.org/wiki/Telar)|Los sumerios construyen telares para cubrirse.|![](https://assets.editorial.aetnd.com/uploads/2019/08/sumerian-gettyimages-142931315.jpg)|
+|3000 aec.|[Ábaco](https://es.wikipedia.org/wiki/%C3%81baco)|Los antiguos egipcios y mesopotámicos desarrollan una de las primeras herramientas de cálculo.|![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*wYVwfI9eGZv9Tsx0DaY7Kw.jpeg)|
+|100 ec.|[Mecanismo de Anticitera](https://es.wikipedia.org/wiki/Mecanismo_de_Anticitera)|Los griegos crean la primera computadora analógica conocida.|![](https://upload.wikimedia.org/wikipedia/commons/6/66/NAMA_Machine_d%27Anticyth%C3%A8re_1.jpg)|
+|850 ec.|[Álgebra](https://es.wikipedia.org/wiki/%C3%81lgebra)|Los matemáticos persas desarrollan el álgebra, sentando las bases para futuros avances en matemáticas y computación.|
+|1642 ec.|[Pascalina](https://es.wikipedia.org/wiki/Pascalina)|Blaise Pascal construye la primera calculadora mecánica girando ruedas.|![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Arts_et_Metiers_Pascaline_dsc03869.jpg/1920px-Arts_et_Metiers_Pascaline_dsc03869.jpg)
+|1801 ec.|[Telar de Jacquard](https://es.wikipedia.org/wiki/Telar_de_Jacquard)|Jacquard construye el primer telar mecánico y automático con tarjetas perforadas para definir los dibujos.|![](https://upload.wikimedia.org/wikipedia/commons/5/5f/Jacquard.loom.full.view.jpg)
+|1842 ec.|[Máquina Analítica](https://es.wikipedia.org/wiki/M%C3%A1quina_anal%C3%ADtica)|Charles Babbage y Ada Lovelace trabajan en la Máquina Analítica, aunque no llegó a funcionar. Ada escribió las primeras líneas de código de la historia.|![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/AnalyticalMachine_Babbage_London.jpg/800px-AnalyticalMachine_Babbage_London.jpg)
+|1884 ec.|[Máquina Tabular](https://es.wikipedia.org/wiki/M%C3%A1quina_tabuladora)|Hollerith desarrolla la Máquina Tabular de tarjetas perforadas para ordenar el registro de propiedad en la Conquista del Oeste.|![](https://upload.wikimedia.org/wikipedia/commons/4/4e/HollerithMachine.CHM.jpg)
+|1914 ec.|[Ajedrecista](https://es.wikipedia.org/wiki/El_Ajedrecista) | Leonardo Torres Quevedo presenta el Ajedrecista, considerado el primer autómata de juego de la historia.|![](https://blogs.upm.es/museotorresquevedocaminos/wp-content/uploads/sites/545/2019/09/Ajedrecista-SDA.jpg)
+|1920 ec.|[Aritmómetro electromecánico](https://es.wikipedia.org/wiki/Aritm%C3%B3metro_electromec%C3%A1nico) | Torres Quevedo desarrolla su aritmómetro electromecánico, una de las primeras computadoras analógicas.|![](https://upload.wikimedia.org/wikipedia/commons/7/7d/Aritm%C3%B3metro_Electromec%C3%A1nico.jpg)
+|1936 ec.|["On Computable Numbers"](https://es.wikipedia.org/wiki/Sobre_los_n%C3%BAmeros_computables)|Alan Turing publica este artículo, estableciendo las bases teóricas de la ciencia de la computación.|
+|1936 ec.|[Z1](https://es.wikipedia.org/wiki/Z1_(computadora))|Konrad Zuse diseña y fabrica la Z1, considerada por muchos como la primera computadora programable de la historia.|
+|1943 ec.|[ENIAC](https://es.wikipedia.org/wiki/ENIAC)|Se completa ENIAC, considerada la primera computadora electrónica de propósito general.|
+|1947 ec.|[Transistor](https://es.wikipedia.org/wiki/Transistor)|Se inventa el transistor en los Laboratorios Bell, revolucionando la electrónica y la computación.|
+|1969 ec.|[ARPANET](https://es.wikipedia.org/wiki/ARPANET)|Se crea ARPANET, precursora de Internet.|
+|1971 ec.|[Intel 4004](https://es.wikipedia.org/wiki/Intel_4004)|Intel lanza el primer microprocesador comercial.|
+|1981 ec.|[IBM PC](https://es.wikipedia.org/wiki/IBM_PC)|IBM introduce la IBM PC, popularizando las computadoras personales.|
+|1989 ec.|[World Wide Web](https://es.wikipedia.org/wiki/World_Wide_Web)|Tim Berners-Lee propone la World Wide Web en el CERN.|
+|1997 ec.|[Deep Blue](https://es.wikipedia.org/wiki/Deep_Blue)|Deep Blue de IBM vence al campeón mundial de ajedrez Garry Kasparov.|
+|2007 ec.|[iPhone](https://es.wikipedia.org/wiki/IPhone_(1.%C2%AA_generaci%C3%B3n))|Apple lanza el iPhone, iniciando la era de los smartphones modernos.|
+|2016 ec.|[AlphaGo](https://es.wikipedia.org/wiki/AlphaGo)|AlphaGo de DeepMind vence al campeón mundial de Go, marcando un hito en la inteligencia artificial.|
 
 ## ¿Qué?
 
@@ -174,10 +191,10 @@ Para la eliminación de errores de cualquier otra cualidad.|Para la modificació
 
 |No mantenible|Mantenible|
 |-|-|
-Viscoso: no se puede entender con facilidad     |Fluido: se puede entender con facilidad
-Rígido: no se puede cambiar con facilidad       |Flexible: se puede cambiar con facilidad
-Frágil: no se puede probar con facilidad        |Fuerte: se puede probar con facilidad
-Inmóvil: no se puede reutilizar con facilidad   |Reusable: se puede reutilizar con facilidad
+Viscoso: no se puede entender con facilidad    |Fluido: se puede entender con facilidad
+Rígido: no se puede cambiar con facilidad      |Flexible: se puede cambiar con facilidad
+Frágil: no se puede probar con facilidad       |Fuerte: se puede probar con facilidad
+Inmóvil: no se puede reutilizar con facilidad  |Reusable: se puede reutilizar con facilidad
 
 </div>
 
@@ -193,19 +210,19 @@ La Crisis del Sotfware es la incapacidad para dominar la complejidad de los proy
 
 Motivos de Proyectos Fracasados/Problemáticos|Incidencia
 |-|-:|
-**Gestión**                                     |**31.0%**
-Falta del involucración del usuario             |12.8%
-Poco apoyo de las gerencias involucradas        |7.5% 
-Falta de recursos                               |6.4% 
-Tiempos poco realistas                          |4.3% 
-**Requisitos**                                  |**35.3%**
-Requerimientos y especificaciones poco claras   |12.3%
-Cambio de requerimientos y especificaciones     |11.8%
-Expectativas poco realistas                     |5.9% 
-Objetivos poco claros                           |5.3% 
-**Tecnologías**                                 |**10.7%**
-Tecnología deficiente                           |7.0% 
-Nuevas tecnologías                              |3.7% 
-**Otros**                                       |**23.0%**
+**Gestión**                                    |**31.0%**
+Falta del involucración del usuario            |12.8%
+Poco apoyo de las gerencias involucradas       |7.5% 
+Falta de recursos                              |6.4% 
+Tiempos poco realistas                         |4.3% 
+**Requisitos**                                 |**35.3%**
+Requerimientos y especificaciones poco claras  |12.3%
+Cambio de requerimientos y especificaciones    |11.8%
+Expectativas poco realistas                    |5.9% 
+Objetivos poco claros                          |5.3% 
+**Tecnologías**                                |**10.7%**
+Tecnología deficiente                          |7.0% 
+Nuevas tecnologías                             |3.7% 
+**Otros**                                      |**23.0%**
 
 </div>

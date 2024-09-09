@@ -4,8 +4,8 @@
 
 |[Temario](/temario/README.md)|
 |-|
-[Introducción](/temario/000-introduccion.md): fundamentos de la asignatura / grado.
-[Algoritmos](/temario/001-algoritmos.md).
-[Lenguajes de programación](temario/002-lenguajesDeProgramacion.md)
+[Introducción](temario/00000-introduccion.md): fundamentos de la asignatura / grado.
+[Algoritmos](temario/00100-algoritmos.md).
+[Lenguajes de programación](temario/00200-lenguajesDeProgramacion.md)
 
 </div>

@@ -1,16 +1,22 @@
 # Algoritmos
 
-Herramienta conceptual que se utiliza para resolver problemas y automatizar tareas, y puede ser implementado en una variedad de formas, independientemente de la tecnología específica utilizada.
-
 ## ¿Por qué?
 
-- Resolver problemas de manera eficiente.
-- Automatizar procesos.
-- Obtener consistencia y precisión en las operaciones.
+- Necesidad de sistematización.
+  - Los seres humanos siempre han buscado formas de sistematizar procesos para resolver problemas recurrentes.
+  - Los algoritmos proporcionaron un método para describir estos procesos de manera precisa y repetible.
+- Evolución del pensamiento matemático.
+  - Las civilizaciones antiguas desarrollaron métodos sistemáticos para realizar cálculos y resolver problemas geométricos.
+  - Estos métodos pueden considerarse como los precursores de los algoritmos modernos.
+- Avances en la computación.
+  - Con el desarrollo de las primeras computadoras en el siglo XX, surgió la necesidad de instrucciones precisas que estas máquinas pudieran seguir.
+  - Los algoritmos se convirtieron en el lenguaje fundamental para comunicar instrucciones a las computadoras.
 
 ## ¿Qué?
 
-Un algoritmo es un conjunto finito de instrucciones bien definidas y no ambiguas, que se realizan en una secuencia determinada para solucionar un problema o realizar una tarea.
+|||
+|-|-|
+|Secuencia finita y bien definida de instrucciones o pasos que se siguen para resolver un problema o realizar una tarea específica.|Es una herramienta conceptual que puede implementarse de diversas formas, independientemente de la tecnología utilizada.|
 
 |||
 |-|-|
@@ -21,6 +27,12 @@ Salida|Los algoritmos producen **una o más salidas**; siempre deben generan al 
 Efectividad|Todas las operaciones que realiza deben ser suficientemente básicas como para ser desarrolladas de modo exacto y en un tiempo finito.
 
 ## ¿Para qué?
+
+- Resolver problemas de manera eficiente.
+- Automatizar procesos.
+- Obtener consistencia y precisión en las operaciones.
+
+### Para
 
 - Solución de problemas en matemáticas, ciencia, ingeniería.
 - Procesamiento de datos e información.

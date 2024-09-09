@@ -1,9 +1,9 @@
 # Temario
 
-- [x] [**Introducción**](00-introduccion.md)
-  - [x] [**Algoritmos**](001-Algoritmos.md)
+- [x] [**Introducción**](000-introduccion.md)
+  - [x] [**Algoritmos**](001-algoritmos.md)
 - [ ] Programación estructurada
-  - [x] [**Lenguajes de programación**](lenguajesDeProgramacion.md)
+  - [x] [**Lenguajes de programación**](002-lenguajesDeProgramacion.md)
   - [ ] [Java](java.md)
   - [x] [Salida por consola](salidaJava.md)
   - [x] [Variables](variables.md)

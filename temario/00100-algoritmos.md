@@ -43,8 +43,39 @@ Efectividad|Todas las operaciones que realiza deben ser suficientemente básicas
 
 ## ¿Cómo?
 
-#### Componentes y Estructura:
+### Componentes y Estructura
 
 |Entrada|Proceso|Salida|
 |-|-|-|
-Datos iniciales sobre los que se va a operar.|Una serie de pasos que se siguen en un orden específico.<br>Operaciones básicas (suma, resta, comparaciones).<br>Decisiones y repeticiones.|Solución al problema inicial.
+|Datos iniciales sobre los que se va a operar.|Una serie de pasos que se siguen en un orden específico.<br>Operaciones básicas (suma, resta, comparaciones).<br>Decisiones y repeticiones.|Solución al problema inicial.|
+
+### Diseño de Algoritmos
+
+Se trata de construir/diseñar/crear un algoritmo efectivo
+
+- Definir claramente el problema
+- Identificar las entradas y salidas esperadas
+- Diseñar los pasos del proceso
+- Verificar la lógica y corregir errores
+- Optimizar para mejorar la eficiencia
+
+#### Técnicas comunes
+
+- Divide y vencerás
+- Programación dinámica
+- Algoritmos voraces (greedy)
+- Backtracking
+
+### Complejidad algorítmica
+
+La eficiencia de un algoritmo se mide en términos de:
+
+- Tiempo de ejecución (complejidad temporal)
+- Uso de memoria (complejidad espacial)
+
+Se utiliza la notación Big O para expresar la complejidad, por ejemplo:
+
+- O(1): Tiempo constante
+- O(log n): Logarítmico
+- O(n): Lineal
+- O(n²): Cuadrático

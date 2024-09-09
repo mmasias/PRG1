@@ -10,12 +10,12 @@ La humanidad gracias a sus herramientas y, en particular, al conocimiento (cienc
 |100 ec.|[Mecanismo de Anticitera](https://es.wikipedia.org/wiki/Mecanismo_de_Anticitera)|Los griegos crean la primera computadora analógica conocida, diseñada para predecir posiciones astronómicas y eclipses de hasta diecinueve años con propósitos calendarios y astrológicos.|![](https://upload.wikimedia.org/wikipedia/commons/6/66/NAMA_Machine_d%27Anticyth%C3%A8re_1.jpg)|
 |1642 ec.|[Pascalina](https://es.wikipedia.org/wiki/Pascalina)|Blaise Pascal construye la primera calculadora mecánica girando ruedas.|![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Arts_et_Metiers_Pascaline_dsc03869.jpg/1920px-Arts_et_Metiers_Pascaline_dsc03869.jpg)
 |1801 ec.|[Telar de Jacquard](https://es.wikipedia.org/wiki/Telar_de_Jacquard)|Jacquard construye el primer telar mecánico y automático con tarjetas perforadas para definir los dibujos.|![](https://upload.wikimedia.org/wikipedia/commons/5/5f/Jacquard.loom.full.view.jpg)
-|1936 ec.|["On computable numbers"](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf)|Alan Turing publica este artículo, estableciendo las [bases teóricas de la ciencia de la computación](maquinaTuring.md).|![](/images/TuringPaper.png)
+|1936 ec.|["On computable numbers"](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf)|Alan Turing publica este artículo, estableciendo las [bases teóricas de la ciencia de la computación](99910-maquinaTuring.md).|![](/images/TuringPaper.png)
 |1947 ec.|[Transistor](https://es.wikipedia.org/wiki/Transistor)|Se inventa el transistor en los Laboratorios Bell, revolucionando la electrónica y la computación.|![](https://upload.wikimedia.org/wikipedia/commons/f/f6/Replica_of_first_transistor.jpg)
 |1969 ec.|[ARPANET](https://es.wikipedia.org/wiki/ARPANET)|Se crea ARPANET, precursora de Internet.|![](https://upload.wikimedia.org/wikipedia/commons/b/bf/Arpanet_logical_map%2C_march_1977.png)
 |1981 ec.|[IBM PC](https://es.wikipedia.org/wiki/IBM_PC)|IBM introduce la IBM PC, popularizando las computadoras personales.|![](https://upload.wikimedia.org/wikipedia/commons/6/69/IBM_PC_5150.jpg)
 
-> [Versión extendida](hitosCompletos.md)
+> [Versión extendida](99900-hitosCompletos.md)
 
 ## ¿Qué?
 

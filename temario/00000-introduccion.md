@@ -35,7 +35,7 @@ Scripts para la creación de las tablas de las bases de datos y su población (S
 |Objeto|Capacidad cualitativa|Capacidad cuantitativa
 |-|-|-|
 Ser humano|Muy buena: reconocimiento de patrones, asociaciones, recursividad, …​|Muy mala: pequeña, errores por cansancio, desmotivación, …​ y muy lentos
-Hardware|Muy mala: ningún computador superó la prueba de Turing|Muy buena: sin errores y a toda velocidad
+Hardware|Muy mala: ningún computador superó la [prueba de Turing](https://es.wikipedia.org/wiki/Prueba_de_Turing)|Muy buena: sin errores y a toda velocidad
 
 <div align="center">
 
@@ -64,7 +64,7 @@ Hardware|Muy mala: ningún computador superó la prueba de Turing|Muy buena: sin
 
 #### Información
 
-[Conocimiento...](https://docs.google.com/presentation/d/1QJdg8M0iOwv1gxydwcza6X0dkZmrlaxFf1PH87X7gRo/edit?usp=sharing)
+[Conocimiento...](https://docs.google.com/presentation/d/1QJdg8M0iOwv1gxydwcza6X0dkZmrlaxFf1PH87X7gRo/edit?usp=sharing) (*diapo 11*)
 
 #### Sistema de Información
 
@@ -215,3 +215,7 @@ Nuevas tecnologías                             |3.7%
 **Otros**                                      |**23.0%**
 
 </div>
+
+### ¿Qué hacer?
+
+- [Disciplinas del software](00001-disciplinasSw.md)

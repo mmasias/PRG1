@@ -180,10 +180,60 @@ Para la eliminación de errores de cualquier otra cualidad.|Para la modificació
 
 |No mantenible|Mantenible|
 |-|-|
-Viscoso: no se puede entender con facilidad    |Fluido: se puede entender con facilidad
-Rígido: no se puede cambiar con facilidad      |Flexible: se puede cambiar con facilidad
-Frágil: no se puede probar con facilidad       |Fuerte: se puede probar con facilidad
-Inmóvil: no se puede reutilizar con facilidad  |Reusable: se puede reutilizar con facilidad
+**Viscoso**: no se puede entender con facilidad    |**Fluido**: se puede entender con facilidad
+**Rígido**: no se puede cambiar con facilidad      |**Flexible**: se puede cambiar con facilidad
+**Frágil**: no se puede probar con facilidad       |**Fuerte**: se puede probar con facilidad
+**Inmóvil**: no se puede reutilizar con facilidad  |**Reusable**: se puede reutilizar con facilidad
+
+</div>
+
+##### Viscosidad vs Fluidez
+
+Viscosidad es la dificultad para entender el código en su completitud.
+
+<div align="center">
+
+|Viscosidad del diseño|Viscosidad del entorno|
+|-|-|
+Se produce cuando nos enfrentamos a un cambio, los ingenieros suelen encontrar más de una manera de hacer el cambio. Algunas de las formas conservan el diseño, otros no lo hacen, es decir, son atajos.|Se produce cuando el entorno de desarrollo es lento e ineficiente. Por ejemplo, si los tiempos de compilación son muy largos, los ingenieros tendrán la tentación de hacer cambios que no obligan a grandes re-compilaciones, a pesar de que esos cambios no son óptimos desde el punto de vista del diseño.
+*Cuando preservar el diseño es más difícil que emplear los atajos, a continuación, la viscosidad del diseño es alta.*|*Si el sistema de control de código fuente requiere horas para comprobar tan sólo unos pocos archivos, consecuentemente, los ingenieros tendrán la tentación de hacer cambios que requieren el menor número de subidas (commits) como sea posible, independientemente de si el diseño se conserva.*
+*Es fácil de hacer las cosas mal, pero difícil de hacer lo correcto.*
+
+</div>
+
+#### Rigidez vs Flexibilidad
+
+Rigidez es la tendencia del software a ser difícil de cambiar, incluso en formas simples.
+
+<div align="center">
+
+||||
+|-|-|-|
+Cada cambio provoca una cascada de cambios posteriores en los módulos dependientes. Lo que comienza como un simple cambio de dos días a un módulo se convierte en un maratón de varias semanas de cambios en el módulo después de otros módulos según los ingenieros persiguen el hilo del cambio a través de la aplicación.|Cuando el software se comporta de esta manera, los gerentes temen que no permitirá a los ingenieros solucionar problemas críticos. Esta resistencia se deriva del hecho de que ellos no saben, con confiabilidad, cuando terminarán. Si los gerentes insisten, los ingenieros se perderán en este tipo de problemas, que pueden desaparecer durante largos periodos de tiempo.|Cuando los miedos del gerente son tan agudos que se niegan a permitir cambios en el software, la rigidez oficial se instala. Por lo tanto, lo que comienza como una deficiencia de diseño, termina siendo una política de gestión adversa.
+
+</div>
+
+#### Inmovilidad vs Reusabilidad
+
+Inmovilidad es la imposibilidad de volver a utilizar el software de otros proyectos o de partes del mismo proyecto.
+
+<div align="center">
+
+|||
+|-|-|
+A menudo sucede que un ingeniero descubrirá que necesita un módulo que es similar a uno que escribió otro ingeniero. Sin embargo, también sucede a menudo que el módulo en cuestión tiene demasiado equipaje del que depende.|Después de mucho trabajo, los ingenieros descubren que el trabajo y el riesgo requerido para separar las partes deseables del software de las partes no deseadas son demasiado grandes como para tolerarlo. Y así, el software es simplemente reescrito en lugar de reutilizado.
+
+</div>
+
+#### Fragilidad vs Fortaleza
+
+Fragilidad es la tendencia del software para estropearse en muchos lugares cada vez que se cambia. A menudo, el error se produce en las zonas que no tienen ninguna relación conceptual con el área que se ha cambiado..
+
+<div align="center">
+
+|||
+|-|-|
+Según empeora la fragilidad, la probabilidad de error aumenta con el tiempo, asintóticamente acercándose al 100%. Este tipo de software es imposible de mantener. Cada solución hace que sea peor, la introducción de más problemas que soluciones.|Tales errores llenan las sensaciones de los gerentes de malos presagios. Cada vez que autorizan una solución, temen que el software va a estropearse de alguna manera inesperada. Este tipo de software hace que los gerentes y los clientes sospechen que los desarrolladores han perdido el control de su software. La desconfianza reina, y la credibilidad se pierde.
 
 </div>
 
@@ -193,7 +243,18 @@ Inmóvil: no se puede reutilizar con facilidad  |Reusable: se puede reutilizar c
 
 ### Crisis del Software
 
-La Crisis del Sotfware es la incapacidad para dominar la complejidad de los proyectos software.
+La Crisis del Sotfware es la **incapacidad** para dominar la complejidad de los proyectos software.
+
+*Como comparativa entre 2011 a 2015 se analizaron más de 50.000 proyectos alrededor del mundo, desde proyectos muy pequeños a proyectos grandes de implementación de sistemas:*
+
+<div align=center>
+
+|![](/images/grafica-exito-proyectos-software.png)|
+|:-:|
+Fuente: Informes CHAOS del [Standish Group](www.standishgroup.com).
+
+</div>
+
 
 <div align="center">
 

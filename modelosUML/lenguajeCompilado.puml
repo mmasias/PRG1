@@ -1,0 +1,17 @@
+node machine as "machine X" {
+
+component compiler as "compiler XA"
+file text as "prog.ext" <<highLevelCode>>
+component exe as "prog.exe" <<binaryCode X>>
+
+compiler -down-> text
+compiler -down-> exe
+
+}
+
+node machine2 as "machine Y" {
+
+component exe2 as "prog.exe" <<binaryCode X>> #red
+
+
+}

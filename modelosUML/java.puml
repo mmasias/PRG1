@@ -1,0 +1,63 @@
+hide circle
+hide members
+
+class donde as "Sun\nMicrosystems" <<¿Dónde?>>
+note left
+Fabricante de hardware
+y desarrollo de software
+Pionero de Sillycon Valley
+end note
+
+class cuando as "1991" <<¿Cuándo?>>
+note right
+Coincidiendo con
+la World Wide Web
+end note
+
+class por as "Dependencia de\nla plataforma" <<¿Por qué?>>
+note left
+Un programa compilado en
+una máquina con un sitema operativo,
+no funcionará ejecutado sobre 
+otro sistema operativo
+end note
+
+class quien as "James Gosling" <<¿Quién?>>
+note right
+Doctor/Desarrollador
+en SunMicrosystem, Google
+Medalla John von Neumann, IEEE
+end note
+
+class que as "<b>JAVA</b>" <<¿Qué?>>
+note left
+Primero llamado Oak, Green finalemente Java
+Plataforma con intérprete, biblioteca y lenguaje
+fuertemente tipado, imperativo, 
+orientado a objetos cob clases y concurrente
+Ámbito general: web, sistemas, ... 
+
+end note
+
+class para as "Independencia de\nla Plataforma" <<¿Para qué?>>
+note right
+un único desarrollo vale para
+ejecutar la aplicación independientemente
+del sistema operativo de la máquina
+end note
+
+class como as "Descripción" <<¿Cómo?>>
+
+por -up-> cuando
+por -up-> donde
+
+quien -up-> cuando
+quien -up-> donde
+quien -up-> por
+
+que -up-> quien
+
+para -up-> que
+
+como -up-> que
+como -up-> para

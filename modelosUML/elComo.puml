@@ -1,0 +1,45 @@
+hide members
+hide circle
+hide stereotypes
+
+class Program 
+class Package 
+class Class 
+class Enum 
+class Method 
+class Sentence 
+class Expression 
+class Operator 
+class Data 
+class Object 
+class Exception 
+class Variable {
+constante: boolean
+}
+class Clasificador 
+class PrimitiveType 
+
+Program *-down-> "+" Package
+Package *-down-> "*" Package
+Package *-down-> "*" Class
+Class *-down-> "*" Class : anidada
+Class *-down-> "*" Clasificador : dependecy
+Class *-down-> "*" Data : atributte
+Class *-down-> "+" Method
+Class <|-down- Enum
+Method *-down-> "+" Sentence
+Method *-down-> "*" Data : parameter
+Method *-down-> "*" Data : local
+Sentence *-down-> "+" Expression
+Expression *-down-> "*" Operator
+Expression *-down-> "+" Data : reference
+Expression *-down-> "*" Method : invocation
+Method ..> "?" Clasificador : return
+Method ..> "*" Clasificador : parameter
+Data <|-down- Variable
+Data <|-down- Object
+Object <|-down- Exception
+Operator ..> Data
+Data --> Clasificador : estático
+Clasificador <|-down- Class
+Clasificador <|-down- PrimitiveType

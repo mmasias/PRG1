@@ -1,0 +1,19 @@
+node machine as "machine X" {
+
+component interprete as "interprete XA"
+file in as "prog.ext" <<code>>
+
+interprete -down-> in
+
+
+}
+
+node machine2 as "machine Y" {
+
+component interprete2 as "interprete YA" 
+file in2 as "prog.ext" <<code>>
+
+interprete2 -down-> in2
+
+
+}

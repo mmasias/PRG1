@@ -1,0 +1,24 @@
+node machine as "machine ?" {
+
+component javac as "javac.exe" <<compiler>>
+file text as "prog.java" <<code>>
+javac -down-> text
+component java as "java.exe" <<interpreter, JVM>>
+file out as "prog.class"<<bytecode>>
+
+
+javac -down-> out
+java -down-> out
+
+
+}
+
+node machine2 as "machine ?" {
+
+component java2 as "java.exe" <<interpreter, JVM>>
+file out2 as "prog.class"<<bytecode>>
+
+java2 -down-> out2
+
+
+}

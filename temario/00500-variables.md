@@ -203,7 +203,7 @@ double n = Math.random();
 
 ### Declaración de constantes
 
-- Anteponiendo la palabra reservada ```final`````` antes de la declaración de la variable.
+- Anteponiendo la palabra reservada `final` antes de la declaración de la variable.
 - Por convención de código limpio, se escriben en mayúsculas y en snake case.
 
 ```java

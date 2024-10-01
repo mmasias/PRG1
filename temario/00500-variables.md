@@ -102,6 +102,8 @@ Una vez declarada la variable, mediante el *operador de asignación*.
 
 </div>
 
+> ***Expresión***: Literal, variable o secuencia de operaciones entre literales y/o variables que produce un valor.
+
 ### "Pequeñas" anécdotas sobre la asignación
 
 <div align=center>
@@ -165,8 +167,6 @@ Operan sobre valores numéricos del mismo tipo, y devuelven un valor del tipo de
 |-|-|
 ```"Programacion" + " 1"```|"Programacion 1"
 ```"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n"+<br>"Donec rhoncus sollicitudin enim vitae tempor.\n"+<br>"Nullam dui lorem, vulputate varius sapien ac, malesuada dictum metus.\n"+<br>"..."```|"Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec rhoncus sollicitudin enim vitae tempor.<br>Nullam dui lorem, vulputate varius sapien ac, malesuada dictum metus.<br>..."
-
-> ***Expresión***: Literal, variable o secuencia de operaciones entre literales y/o variables que produce un valor.
 
 <div align=center>
 

@@ -10,3 +10,7 @@
 [Java](temario/00300-java.md)
 
 </div>
+
+## Repos de ediciones de la asignatura
+
+- Edición actual: [[24][25]](https://github.com/mmasias/24-25-PRG1)

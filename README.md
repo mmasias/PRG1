@@ -6,8 +6,7 @@
 |-|
 [Introducción](temario/00000-introduccion.md): fundamentos de la asignatura / grado.
 [Algoritmos](temario/00100-algoritmos.md).
-[Lenguajes de programación](temario/00200-lenguajesDeProgramacion.md)
-[Java](temario/00300-java.md)
+[Lenguajes de programación](temario/00200-lenguajesDeProgramacion.md) / [Java](temario/00300-java.md)
 [Salida por consola](00400-salidaJava.md)
 [Variables](00500-variables.md)
 [Entrada por consola](00600-entradaJava.md)

@@ -15,7 +15,7 @@ while (<expresión>)
 ```java
 do 
     <sentencia o bloque de código>
-while (<expresión>)
+while (<expresión>);
 ```
 
 ## Iterativa determinada

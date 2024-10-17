@@ -291,3 +291,18 @@ El operador paréntesis devuelve la evaluación de la expresión anidada.
 ```(5+4) / (4+2)```|¿1 u 8?
 
 </div>
+
+### Operador lógico
+
+#### Binario
+
+||||
+|-|-|-|
+|&&|y-lógico|Devuelve la evaluación de la primera expresión, (no necesariamente verdadero), cuando ambos operandos se evalúan a verdadero. Si la primera expresión es falsa, devuelve falso sin evaluar la segunda expresión
+|\|\||o-lógico|Devuelve la evaluación de la primera expresión, (no necesariamente true) cuando es verdadera o, caso contrario, la evaluación de la segunda expresión cuando es cierta. Solo devuelve falso si ambas son falsas
+
+##### A tener en cuenta
+
+- **Cortocircuito**: Tanto && como || utilizan evaluación de cortocircuito. Esto significa que si el resultado se puede determinar evaluando solo la primera expresión, la segunda no se evalúa.
+- **Devolución de valores**: Estos operadores no devuelven necesariamente true o false, sino el resultado de la última expresión evaluada.
+- **Uso con tipos no booleanos**: En Java, a diferencia de algunos otros lenguajes, && y || solo pueden usarse con operandos booleanos.

@@ -296,13 +296,35 @@ El operador paréntesis devuelve la evaluación de la expresión anidada.
 
 #### Binario
 
+<div align=center>
+
 ||||
 |-|-|-|
 |&&|y-lógico|Devuelve la evaluación de la primera expresión, (no necesariamente verdadero), cuando ambos operandos se evalúan a verdadero. Si la primera expresión es falsa, devuelve falso sin evaluar la segunda expresión
 |\|\||o-lógico|Devuelve la evaluación de la primera expresión, (no necesariamente true) cuando es verdadera o, caso contrario, la evaluación de la segunda expresión cuando es cierta. Solo devuelve falso si ambas son falsas
+
+</div>
 
 ##### A tener en cuenta
 
 - **Cortocircuito**: Tanto && como || utilizan evaluación de cortocircuito. Esto significa que si el resultado se puede determinar evaluando solo la primera expresión, la segunda no se evalúa.
 - **Devolución de valores**: Estos operadores no devuelven necesariamente true o false, sino el resultado de la última expresión evaluada.
 - **Uso con tipos no booleanos**: En Java, a diferencia de algunos otros lenguajes, && y || solo pueden usarse con operandos booleanos.
+
+<div align=center>
+
+| | |
+|-|-|
+|`boolean a = true;`
+|`boolean b = false;`
+|`System.out.println(a && b);`|Imprime: false
+|`System.out.println(a \|\| b);`|Imprime: true
+|Ejemplos de cortocircuito
+|`int x = 5;`
+|`boolean result = (x > 10) && (x++ > 0);`|x++ no se evalúa
+|`System.out.println(x);`|Imprime: 5
+| | |
+|`result = (x < 10) \|\| (x++ > 0);`|x++ no se evalúa
+|`System.out.println(x);`|Imprime: 5
+
+</div>

@@ -1,4 +1,4 @@
-# Refinando la estructura de bucles en programación para mejorar la claridad y mantenibilidad del código
+# Gestión de bucles con estados
 
 ## ¿Por qué?
 
@@ -11,12 +11,14 @@
 
 ## ¿Para qué?
 
+El objetivo final es mejorar la claridad y mantenibilidad del código.
+
 - **Mejora la legibilidad y mantenibilidad del código**: La condición del bucle se vuelve más clara (`while (hayaVida)`), facilitando la comprensión del propósito del bucle sin necesidad de analizar la condición detalladamente.
 - **Facilita la modificación y extensión del código**: Al necesitar cambios o complicaciones en la condición (como añadir más factores a `hayaVida`), solo se modifica la asignación de la variable sin alterar la estructura del bucle.
 
 ## ¿Cómo?
 
-- **Implementación en java**: Se establece la condición inicial de `hayaVida` al principio. Dentro del bucle, se ejecuta el código necesario y, al final de cada iteración, se actualiza `hayaVida` según las nuevas condiciones (ejemplo: `hayaVida = energia > 0`). Esto separa la lógica del estado de la lógica de procesamiento, haciendo el código más estructurado y claro.
+- **Implementación en java**: Por ejemplo, se establece la condición inicial de `hayaVida` al principio. Dentro del bucle, se ejecuta el código necesario y, al final de cada iteración, se actualiza `hayaVida` según las nuevas condiciones (ejemplo: `hayaVida = energia > 0`). Esto separa la lógica del estado de la lógica de procesamiento, haciendo el código más estructurado y claro.
 
 ```java
 boolean hayaVida = energia > 0;

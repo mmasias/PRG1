@@ -1,5 +1,6 @@
 # Documentos varios
 
+- [Gestión de bucles con estados](gestionDeBuclesConEstados.md), una reflexión acerca de esta propuesta.
 - [¿If o ternario?](ternarioOif.md), breves líneas acerca de cuándo y cómo utilizar una y otra notación. O no.
 - [Clean Code](cleanCode.md), una introducción al concepto y filosofía detrás del código limpio.
 - [Nomenclaturas](nomenclaturas.md) para nombrado de cosas.

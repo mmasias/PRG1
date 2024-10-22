@@ -14,6 +14,8 @@
 
 </div>
 
+Se recomienda además el leer los artículos contenidos en la carpeta de [documentos](documentos/README.md)
+
 ## Repos de ediciones de la asignatura
 
 - Edición actual: [[24][25]](https://github.com/mmasias/24-25-PRG1)

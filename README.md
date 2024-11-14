@@ -11,6 +11,8 @@
 [Variables](temario/00500-variables.md)
 [Entrada por consola](temario/00600-entradaJava.md)
 [Estructuras de control](temario/00700-estructurasDeControl.md): [Repetitivas](temario/00720-estructurasDeControlRepetitivas.md) / [Alternativas](temario/00710-estructurasDeControlAlternativas.md)
+**Programación modular**
+[Métodos (estáticos)](/temario/metodosEstaticos.md)
 
 </div>
 

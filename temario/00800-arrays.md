@@ -22,15 +22,13 @@ Un array o matriz es una colección de elementos, todos del mismo tipo, almacena
 
 ## ¿Cómo?
 
-En java
-
 |||Ejemplo|
 |-|-|-|
 Declaración|Especificando el tipo de los elementos que contendrá, seguido de corchetes|```int[] miArray;```
 Inicialización|Definiendo su tamaño |```miArray = new int[10];```
-||Directamente con los elementos|```int[] miArray = {1, 2, 3, 4, 5};```
+Asignación|Asignando un nuevo valor al índice correspondiente.|```miArray[0] = 100;```<br>establece el primer elemento a 100.
+|Inicialización & asignación|Directamente con los elementos|```int[] miArray = {1, 2, 3, 4, 5};```
 Acceso a elementos|Mediante índices. En Java, los índices comienzan en 0|```miArray[0]```<br> accede al primer elemento del array.
-Modificación de elementos|Asignando un nuevo valor al índice correspondiente.|```miArray[0] = 100;```<br>cambia el primer elemento a 100.
 Arrays multidimensionales|Se pueden crear arrays multidimensionales.|```int[][] matriz = new int[3][4];```<br>crea una matriz de 3 por 4.
 Iteración|Se puede recorrer un array usando bucles, como for o while, para acceder o modificar sus elementos.
 

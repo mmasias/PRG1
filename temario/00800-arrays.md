@@ -22,13 +22,15 @@ Un array o matriz es una colección de elementos, todos del mismo tipo, almacena
 
 ## ¿Cómo?
 
+En java
+
 |||Ejemplo|
 |-|-|-|
 Declaración|Especificando el tipo de los elementos que contendrá, seguido de corchetes|```int[] miArray;```
 Inicialización|Definiendo su tamaño |```miArray = new int[10];```
-Asignación|Asignando un nuevo valor al índice correspondiente.|```miArray[0] = 100;```<br>establece el primer elemento a 100.
-|Inicialización & asignación|Directamente con los elementos|```int[] miArray = {1, 2, 3, 4, 5};```
+||Directamente con los elementos|```int[] miArray = {1, 2, 3, 4, 5};```
 Acceso a elementos|Mediante índices. En Java, los índices comienzan en 0|```miArray[0]```<br> accede al primer elemento del array.
+Modificación de elementos|Asignando un nuevo valor al índice correspondiente.|```miArray[0] = 100;```<br>cambia el primer elemento a 100.
 Arrays multidimensionales|Se pueden crear arrays multidimensionales.|```int[][] matriz = new int[3][4];```<br>crea una matriz de 3 por 4.
 Iteración|Se puede recorrer un array usando bucles, como for o while, para acceder o modificar sus elementos.
 
@@ -46,6 +48,12 @@ Number, string, boolean, undefined|Los propios arrays pudiendo construir arrays 
 
 ### Tras la creación
 
+#### Referencia
+
+Las variables/constantes declaradas **no almacenan el valor compuesto del array**, como ocurre con los tipos primitivos, sino que almancenan la dirección/"referencia" a la memoria donde se almacenan los valores del tipo compuesto
+
+#### Por defecto
+
 |Tipo|Valor por defecto|
 |-|-|
 Número|0
@@ -55,5 +63,23 @@ String|null
 
 > Es altamente recomendado que el array se trate de una ***colección de elementos homogéneos, todos ellos del mismo tipo y de la misma naturaleza***: no combinar 5 contadores y un acumulador
 
-> La dirección **null** es el valor de aquella dirección donde no hay valores
+#### Valor null
 
+La dirección **null** es el valor de aquella dirección donde no hay valores
+
+### Propiedad length
+
+Mediante la propiedad `length` se accede a la cantidad del elementos del array dado por la expresión, uno más del índice del último elemento porque empieza por 0
+
+```java
+    listaEnteros = new int[] { 1, 2, 3, 4, 5 };
+    int tamaño = listaEnteros.length;
+```
+
+### Modificación de elementos
+
+Mediante la asignación del valor de la evaluación de una expresión, en la posición indexada mediante el valor entero de la expresión del array dado por la primera expresión
+
+```java
+    listaEnteros[0] = 12;
+```

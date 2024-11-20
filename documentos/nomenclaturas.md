@@ -48,6 +48,17 @@ Común en lenguajes como Python y Ruby para nombrar variables y funciones.
 def get_user_info():
 ```
 
+### Screaming snake case
+
+Como snake case, pero con las letras en mayúsculas
+
+Común en lenguajes como Java para nombrar a las consantes
+
+```java
+final double GRAVEDAD = 9.8;
+```
+
+
 ### Kebab case
 
 Similar al Snake Case, pero las palabras o abreviaturas se separan con guiones (-) en lugar de guiones bajos.

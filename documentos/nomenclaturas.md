@@ -55,7 +55,7 @@ Como snake case, pero con las letras en mayúsculas
 Común en lenguajes como Java para nombrar a las consantes
 
 ```java
-final double GRAVEDAD = 9.8;
+final double GRAVEDAD_TIERRA = 9.8;
 ```
 
 

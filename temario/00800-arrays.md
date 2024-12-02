@@ -36,11 +36,12 @@ Un array o matriz es una colección de elementos, todos del mismo tipo, almacena
 
 |||Ejemplo|
 |-|-|-|
-|Declaración|Especificando el tipo de los elementos que contendrá, seguido de corchetes|```int[] miArray;```
-|Inicialización|Definiendo su tamaño |```miArray = new int[10];```
-|||Directamente con los elementos|```int[] miArray = {1, 2, 3, 4, 5};```
-|Acceso a elementos|Mediante índices.<br>En Java, los índices comienzan en 0|```miArray[0]```<br> accede al primer elemento del array.
-|Modificación de elementos|Asignando un nuevo valor al índice correspondiente.|```miArray[0] = 100;```<br>cambia el primer elemento a 100.
+|Declaración|Especificando el tipo de los elementos que contendrá, seguido de corchetes|```int[] numeros;```
+||Usando [nombres adecuados](/documentos/nombresArrays.md)||
+|Inicialización|Definiendo su tamaño |```numeros = new int[10];```
+|||Directamente con los elementos|```int[] numeros = {1, 2, 3, 4, 5};```
+|Acceso a elementos|Mediante índices.<br>En Java, los índices comienzan en 0|```numeros[0]```<br> accede al primer elemento del array.
+|Modificación de elementos|Asignando un nuevo valor al índice correspondiente.|```numeros[0] = 100;```<br>cambia el primer elemento a 100.
 |Arrays multidimensionales|Se pueden crear arrays multidimensionales.|```int[][] matriz = new int[3][4];```<br>crea una matriz de 3 por 4.
 |Iteración|Se puede recorrer un array usando bucles, como for o while, para acceder o modificar sus elementos.
 
@@ -94,8 +95,8 @@ La dirección **null** es el valor de aquella dirección donde no hay valores
 Mediante la propiedad `length` se accede a la cantidad del elementos del array dado por la expresión, uno más del índice del último elemento porque empieza por 0
 
 ```java
-    listaEnteros = new int[] { 1, 2, 3, 4, 5 };
-    int tamaño = listaEnteros.length;
+    numeros = new int[] { 1, 2, 3, 4, 5 };
+    int tamaño = numeros.length;
 ```
 
 ### Modificación de elementos
@@ -103,5 +104,54 @@ Mediante la propiedad `length` se accede a la cantidad del elementos del array d
 Mediante la asignación del valor de la evaluación de una expresión, en la posición indexada mediante el valor entero de la expresión del array dado por la primera expresión
 
 ```java
-    listaEnteros[0] = 12;
+    numeros[0] = 12;
+```
+
+### Iteración de matrices
+
+Se puede iterar de modo habitual mediante bucles `for` (habitual) o `while` `do/while` (menos habitual), o con el bucle especial `for-each`
+
+#### for
+
+```java
+for (int numero = 0; i < numeros.length; numero++) {
+    System.out.print(numeros[numero]);
+}
+```
+
+#### for-each
+
+```java
+for (int numero : numeros) {
+    System.out.print(numero);
+}
+```
+
+|for|for-each|
+|-|-|
+|Acceder al índice durante la iteración|Solo se necesitan leer los elementos|
+|Modificar elementos del array|Se quiere iterar todo el array en orden|
+|Iterar el array en orden atípico (ej: hacia atrás, saltar elementos)|No se necesita saber la posición del elemento|
+|Iterar sobre múltiples arrays simultáneamente|Se quieres un código más limpio y menos propenso a errores|
+|Detenerse antes del final bajo ciertas condiciones||
+
+> Si solo se necesita leer los elementos en orden, `for-each` puede resultar útil. Si se necesita más control o modificar elementos, se debe usar el `for` tradicional.
+
+Conocidas las ventajas, es fundamental tener en cuenta las limitaciones del for-each:
+
+- No se pueden modificar los elementos de la matriz (los cambios a la variable iteradora no afectan a la matriz)
+- No se tiene acceso al índice
+- No se puede iterar en reversa ni saltar elementos
+- No se puede iterar sobre múltiples matrices al mismo tiempo
+
+#### ¡Cuidado!
+
+Esto no hace lo que parece que hace
+
+```java
+int[] numbers = {1, 2, 3, 4, 5};
+for (int number : numbers) {
+    number = number * 2;  
+}
+System.out.println(numbers[0]);
 ```

@@ -1,5 +1,11 @@
 # Matrices
 
+<div align=right>
+
+***Disclaimer***: *matriz* ~ *array* ~ *tabla*
+
+</div>
+
 ## ¿Por qué?
 
 Habiendo manejado información, a menudo nos encontramos con el desafío de manejar y organizar datos de manera eficiente. 
@@ -20,7 +26,7 @@ Habiendo manejado información, a menudo nos encontramos con el desafío de mane
 
 ## ¿Qué?
 
-Un array o matriz es una colección de elementos, todos del mismo tipo, almacenados en una estructura de datos contigua. Los elementos de un array se almacenan en posiciones consecutivas en la memoria y cada uno de ellos se puede acceder directamente utilizando un índice o una clave numérica. Los arrays pueden ser de una dimensión (como una lista lineal de elementos) o multidimensionales (como tablas de dos o más dimensiones).
+Un array o matriz es una colección de elementos, todos del mismo tipo, almacenados en una estructura de datos contigua. Los elementos de un array se almacenan en posiciones consecutivas en la memoria y cada uno de ellos se puede acceder directamente utilizando un índice o una clave numérica. Las matrices pueden ser de una dimensión (como una lista lineal de elementos) o multidimensionales (como tablas de dos o más dimensiones).
 
 ## ¿Para qué?
 
@@ -29,7 +35,7 @@ Un array o matriz es una colección de elementos, todos del mismo tipo, almacena
 |Almacenamiento organizado|Permiten almacenar conjuntos de datos de manera ordenada y estructurada, facilitando su acceso y manipulación.
 |Procesamiento de datos|Son esenciales para realizar operaciones en conjuntos de datos, como cálculos matemáticos o análisis estadísticos.
 |Eficiencia en el acceso y la modificación|Ofrecen una forma rápida y eficiente de acceder y modificar datos mediante el uso de índices.
-|Base para estructuras de datos más complejas|Los arrays son el fundamento sobre el cual se construyen estructuras de datos más avanzadas y especializadas.
+|Base para estructuras de datos más complejas|Las matrices son el fundamento sobre el cual se construyen estructuras de datos más avanzadas y especializadas.
 |Simplicidad en la implementación|Proporcionan una manera relativamente simple y directa de manejar colecciones de datos, lo cual es ideal para entender conceptos básicos de programación y algoritmos.
 
 ## ¿Cómo? - *En java*
@@ -37,13 +43,13 @@ Un array o matriz es una colección de elementos, todos del mismo tipo, almacena
 |||Ejemplo|
 |-|-|-|
 |Declaración|Especificando el tipo de los elementos que contendrá, seguido de corchetes|```int[] numeros;```
-||Usando [nombres adecuados](/documentos/nombresArrays.md)||
+||Usando [nombres adecuados](/documentos/nombresMatrices.md)||
 |Inicialización|Definiendo su tamaño |```numeros = new int[10];```
 |||Directamente con los elementos|```int[] numeros = {1, 2, 3, 4, 5};```
-|Acceso a elementos|Mediante índices.<br>En Java, los índices comienzan en 0|```numeros[0]```<br> accede al primer elemento del array.
+|Acceso a elementos|Mediante índices.<br>En Java, los índices comienzan en 0|```numeros[0]```<br> accede al primer elemento de la matriz.
 |Modificación de elementos|Asignando un nuevo valor al índice correspondiente.|```numeros[0] = 100;```<br>cambia el primer elemento a 100.
-|Arrays multidimensionales|Se pueden crear arrays multidimensionales.|```int[][] matriz = new int[3][4];```<br>crea una matriz de 3 por 4.
-|Iteración|Se puede recorrer un array usando bucles, como for o while, para acceder o modificar sus elementos.
+|Matrices multidimensionales|Se pueden crear matrices multidimensionales.|```int[][] matriz = new int[3][4];```<br>crea una matriz de 3 por 4.
+|Iteración|Se puede recorrer una matriz usando bucles, como `for`, `while` o `for-each`, para acceder o modificar sus elementos.
 
 ### Operador *new*
 
@@ -51,17 +57,17 @@ Un array o matriz es una colección de elementos, todos del mismo tipo, almacena
 
 ||Operador|Operandos|Devuelve|
 |-|-|-|-|
-**new**|unario prefijo|tipo de tabla|Dirección de memoria donde se ha reservado el espacio para dicha tabla
+**new**|unario prefijo|tipo de matriz|Dirección de memoria donde se ha reservado el espacio para dicha matriz
 
 </div>
 
-#### Tipo de tabla
+#### Tipo de matriz
 
 <div align=center>
 
 |Tipo primitivo|Tipo estructurado/compuesto|
 |-|-|
-Number, string, boolean, undefined|Los propios arrays pudiendo construir arrays de arrays de tipos primitivos, tablas bidimensionales, …​ arrays de arrays de …​ de tipos primitivos, tablas n-dimensionales
+Number, string, boolean, undefined|Las propias matrices pudiendo construir matrices de matrices de tipos primitivos, matrices bidimensionales, …​ matrices de matrices de …​ de tipos primitivos, matrices n-dimensionales
 
 </div>
 
@@ -69,7 +75,7 @@ Number, string, boolean, undefined|Los propios arrays pudiendo construir arrays 
 
 #### Referencia
 
-Las variables/constantes declaradas **no almacenan el valor compuesto del array**, como ocurre con los tipos primitivos, sino que almancenan la dirección/"referencia" a la memoria donde se almacenan los valores del tipo compuesto
+Las variables/constantes declaradas **no almacenan el valor compuesto de la matriz**, como ocurre con los tipos primitivos, sino que almancenan la dirección/"referencia" a la memoria donde se almacenan los valores del tipo compuesto
 
 #### Por defecto
 
@@ -84,7 +90,7 @@ Las variables/constantes declaradas **no almacenan el valor compuesto del array*
 
 </div>
 
-> Es altamente recomendado que el array se trate de una ***colección de elementos homogéneos, todos ellos del mismo tipo y de la misma naturaleza***: no combinar 5 contadores y un acumulador
+> Es altamente recomendado que la matriz se trate de una ***colección de elementos homogéneos, todos ellos del mismo tipo y de la misma naturaleza***: no combinar 5 contadores y un acumulador
 
 #### Valor null
 
@@ -92,7 +98,7 @@ La dirección **null** es el valor de aquella dirección donde no hay valores
 
 ### Propiedad length
 
-Mediante la propiedad `length` se accede a la cantidad del elementos del array dado por la expresión, uno más del índice del último elemento porque empieza por 0
+Mediante la propiedad `length` se accede a la cantidad del elementos de la matriz: uno más que el índice del último elemento porque empiezan por cero. ¿Por qué empiezan por cero?
 
 ```java
     numeros = new int[] { 1, 2, 3, 4, 5 };
@@ -101,7 +107,7 @@ Mediante la propiedad `length` se accede a la cantidad del elementos del array d
 
 ### Modificación de elementos
 
-Mediante la asignación del valor de la evaluación de una expresión, en la posición indexada mediante el valor entero de la expresión del array dado por la primera expresión
+Mediante la asignación del valor de la evaluación de una expresión, en la posición indexada mediante el valor entero de la expresión de la matriz dado por la primera expresión
 
 ```java
     numeros[0] = 12;
@@ -130,8 +136,8 @@ for (int numero : numeros) {
 |for|for-each|
 |-|-|
 |Acceder al índice durante la iteración|Solo se necesitan leer los elementos|
-|Modificar elementos del array|Se quiere iterar todo el array en orden|
-|Iterar el array en orden atípico (ej: hacia atrás, saltar elementos)|No se necesita saber la posición del elemento|
+|Modificar elementos de la matriz|Se quiere iterar todo la matriz en orden|
+|Iterar la matriz en orden atípico (ej: hacia atrás, saltar elementos)|No se necesita saber la posición del elemento|
 |Iterar sobre múltiples arrays simultáneamente|Se quieres un código más limpio y menos propenso a errores|
 |Detenerse antes del final bajo ciertas condiciones||
 
@@ -155,3 +161,10 @@ for (int number : numbers) {
 }
 System.out.println(numbers[0]);
 ```
+
+### Consideraciones adicionales
+
+- [Errores comunes](00801-erroresComunes.md)
+- [Métodos útiles](00802-metodosUtiles.md)
+- [Buenas prácticas](00803-buenasPracticas.md)
+- [Notas sobre rendimiento](00804-notasSobreRendimiento.md)

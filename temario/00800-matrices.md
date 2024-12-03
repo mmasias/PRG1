@@ -26,7 +26,9 @@ Habiendo manejado información, a menudo nos encontramos con el desafío de mane
 
 ## ¿Qué?
 
-Un array o matriz es una colección de elementos, todos del mismo tipo, almacenados en una estructura de datos contigua. Los elementos de un array se almacenan en posiciones consecutivas en la memoria y cada uno de ellos se puede acceder directamente utilizando un índice o una clave numérica. Las matrices pueden ser de una dimensión (como una lista lineal de elementos) o multidimensionales (como tablas de dos o más dimensiones).
+**Una matriz (o array (o tabla (o vector))) es una colección de elementos, todos del mismo tipo, almacenados en una estructura de datos contigua.**
+
+Los elementos de un array se almacenan en posiciones consecutivas en la memoria y cada uno de ellos se puede acceder directamente utilizando un índice o una clave numérica. Las matrices pueden ser de una dimensión (como una lista lineal de elementos) o multidimensionales (como tablas de dos o más dimensiones).
 
 ## ¿Para qué?
 

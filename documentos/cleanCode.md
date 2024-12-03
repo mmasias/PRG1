@@ -29,7 +29,7 @@ Esto se logra acostumbrándose, desde el principio, a temas tan sencillos como:
 
 ||||
 |-|-|-|
-|✅|Nomenclatura adecuada|Utilizar nombres descriptivos para variables, funciones, clases, módulos, etc., que expliquen claramente qué hacen o representan.
+|✅|Nomenclatura adecuada|Utilizar nombres descriptivos para [variables](nombresVariables.md), [matrices](nombresMatrices.md), [métodos](nombresMetodos.md), clases, módulos, etc., que expliquen claramente qué hacen o representan.
 |✅||Aplicar convenciones de nombramiento consistentes como Camel Case, Snake Case, etc.
 |⬜|Organización y estructuración|Organizar el código en una estructura lógica, separando diferentes concerns en diferentes módulos, clases o funciones.
 |⬜||Seguir principios de diseño para asegurar una estructura de código robusta.

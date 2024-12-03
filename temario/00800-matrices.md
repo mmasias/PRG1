@@ -162,7 +162,7 @@ La dirección **null** es el valor de aquella dirección donde no hay valores
 Mediante la propiedad `length` se accede a la cantidad del elementos de la matriz: uno más que el índice del último elemento porque empiezan por cero. ¿Por qué empiezan por cero?
 
 ```java
-    numeros = new int[] { 1, 2, 3, 4, 5 };
+    int[] numeros = new int[] { 1, 2, 3, 4, 5 };
     int tamaño = numeros.length;
 ```
 

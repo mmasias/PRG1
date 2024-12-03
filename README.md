@@ -9,7 +9,7 @@
 |[Lenguajes de programación](/temario/00200-lenguajesDeProgramacion.md) / [Java](/temario/00300-java.md)
 |**Programación**
 |> [Salida por consola](/temario/00400-salidaJava.md)
-|> [Variables](/temario/00500-variables.md) / [Variables II](/temario/00800-arrays.md)
+|> [Variables](/temario/00500-variables.md) / [Variables II](/temario/00800-matrices.md)
 |> [Entrada por consola](/temario/00600-entradaJava.md)
 |> [Estructuras de control](/temario/00700-estructurasDeControl.md): [Repetitivas](/temario/00720-estructurasDeControlRepetitivas.md) / [Alternativas](/temario/00710-estructurasDeControlAlternativas.md)
 |**Programación modular**

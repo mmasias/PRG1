@@ -11,7 +11,7 @@
   - [x] [Estructuras de control](00700-estructurasDeControl.md)
     - [x] [Alternativas](00710-estructurasDeControlAlternativas.md)
     - [x] [Repetitivas](00720-estructurasDeControlRepetitivas.md)
-  - [x] [Variables++](00800-arrays.md)
+  - [x] [Variables++](00800-matrices.md)
   - [x] [Métodos estáticos](metodosEstaticos.md)
 - [ ] Introducción a la programación orientada a objetos
 

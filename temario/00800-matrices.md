@@ -42,18 +42,22 @@ Los elementos de un array se almacenan en posiciones consecutivas en la memoria 
 
 ## ¿Cómo? - *En java*
 
-|||Ejemplo|
-|-|-|-|
-|Declaración|Especificando el tipo de los elementos que contendrá, seguido de corchetes|```int[] numeros;```
-||Usando [nombres adecuados](/documentos/nombresMatrices.md)||
-|Inicialización|Definiendo su tamaño |```numeros = new int[10];```
-|||Directamente con los elementos|```int[] numeros = {1, 2, 3, 4, 5};```
-|Acceso a elementos|Mediante índices.<br>En Java, los índices comienzan en 0|```numeros[0]```<br> accede al primer elemento de la matriz.
-|Modificación de elementos|Asignando un nuevo valor al índice correspondiente.|```numeros[0] = 100;```<br>cambia el primer elemento a 100.
-|Matrices multidimensionales|Se pueden crear matrices multidimensionales.|```int[][] matriz = new int[3][4];```<br>crea una matriz de 3 por 4.
-|Iteración|Se puede recorrer una matriz usando bucles, como `for`, `while` o `for-each`, para acceder o modificar sus elementos.
+### Variable referencia
 
-### Operador *new*
+<div align=center>
+
+`tipo[] <referencia>`
+
+||Una<br>Referencia|Así como un<br>Acceso direto|
+|-|-|-|
+|**No es**|Matriz|Archivo
+|**Tampoco es**|Dirección de la matriz|Dónde está el archivo
+
+</div>
+
+### Operadores
+
+#### Operador *new*
 
 <div align=center>
 
@@ -63,21 +67,76 @@ Los elementos de un array se almacenan en posiciones consecutivas en la memoria 
 
 </div>
 
-#### Tipo de matriz
+#### Otros operadores
 
 <div align=center>
 
-|Tipo primitivo|Tipo estructurado/compuesto|
+|||||
+|-|-|-|-|
+|`=`|Asignación|`<referenciaV>=<direcciónV>`|Asigna la dirección a la referencia, siendo del mismo tipo.
+|`.length`|Longitud|`<direcciónV>.length`|Devuelve la longitud de la matriz.
+|`==`|Comparación|`<direcciónV-I>==<direcciónV-II>`|determina si dos direcciones a vectores del mismo tipo son iguales.
+|`!=`|Comparación|`<direcciónV-I>!=<direcciónV-II>`|determina si dos direcciones a vectores del mismo tipo son distintas.
+|`[expresión]`||`<direcciónV-I>[expresión]`|accede a la variable que ocupa la posición dada por la expresión entera, numerada de cero al anterior a la longitud.
+
+</div>
+
+> #*2Think*: Igual no es lo mismo que lo mismo.
+
+```java
+int[] a = {1,2,3};
+int[] b = a;
+int[] c = {1,2,3};
+```
+
+<div align=center>
+
+<table>
+<tr><td align=center><b>¿Igual?</b></td><td align=center><b>¿Lo mismo?</b></td></tr>
+<tr><td>
+
+||a|b|c|
+|-|:-:|:-:|:-:|
+|**a**|🤔|🤔|🤔|
+|**b**|🤔|🤔|🤔|
+|**c**|🤔|🤔|🤔|
+
+</td><td>
+
+||a|b|c|
+|-|:-:|:-:|:-:|
+|**a**|🤔|🤔|🤔|
+|**b**|🤔|🤔|🤔|
+|**c**|🤔|🤔|🤔|
+</td></tr>
+</table>
+
+</div>
+
+#### Tipos de matrices
+
+<div align=center>
+
+|De tipos primitivos|De tipos estructurados/compuesto|
 |-|-|
 Number, string, boolean, undefined|Las propias matrices pudiendo construir matrices de matrices de tipos primitivos, matrices bidimensionales, …​ matrices de matrices de …​ de tipos primitivos, matrices n-dimensionales
 
 </div>
 
+### Entonces...
+
+|||Ejemplo|
+|-|-|-|
+|Declaración de la variable referencia|Especificando el tipo de los elementos que contendrá, seguido de corchetes|```int[] numeros;```
+||Usando [nombres adecuados](/documentos/nombresMatrices.md)||
+|Inicialización|Definiendo su tamaño |```new int[10];```
+||Directamente con los elementos|```{1, 2, 3, 4, 5};```
+|Acceso a elementos|Mediante índices.<br>En Java, los índices comienzan en 0|```numeros[0]```<br> accede al primer elemento de la matriz.
+|Modificación de elementos|Asignando un nuevo valor al índice correspondiente.|```numeros[0] = 100;```<br>cambia el primer elemento a 100.
+|Matrices multidimensionales|Se pueden crear matrices multidimensionales.|```int[][] matriz = new int[3][4];```<br>crea una matriz de 3 por 4.
+|Iteración|Se puede recorrer una matriz usando bucles, como `for`, `while` o `for-each`, para acceder o modificar sus elementos.
+
 ### Tras la creación
-
-#### Referencia
-
-Las variables/constantes declaradas **no almacenan el valor compuesto de la matriz**, como ocurre con los tipos primitivos, sino que almancenan la dirección/"referencia" a la memoria donde se almacenan los valores del tipo compuesto
 
 #### Por defecto
 

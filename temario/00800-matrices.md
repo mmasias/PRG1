@@ -205,7 +205,7 @@ for (int numero : numeros) {
 |Acceder al índice durante la iteración|Solo se necesitan leer los elementos|
 |Modificar elementos de la matriz|Se quiere iterar todo la matriz en orden|
 |Iterar la matriz en orden atípico (ej: hacia atrás, saltar elementos)|No se necesita saber la posición del elemento|
-|Iterar sobre múltiples arrays simultáneamente|Se quieres un código más limpio y menos propenso a errores|
+|Iterar sobre múltiples arrays simultáneamente|Se quiere un código más limpio y menos propenso a errores (*discutible*)|
 |Detenerse antes del final bajo ciertas condiciones||
 
 > Si solo se necesita leer los elementos en orden, `for-each` puede resultar útil. Si se necesita más control o modificar elementos, se debe usar el `for` tradicional.

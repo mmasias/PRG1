@@ -1,5 +1,4 @@
 
-
 ### Condición simple
 
 Evaluar una condición y ejecuta el bloque de código solo si esa condición es verdadera.
@@ -38,3 +37,88 @@ else if (condicion2)
 else 
     // Código o bloque de código si ninguna de las condiciones anteriores es verdadera
 ```
+
+### Condición múltiple por casos
+
+Se diferencia de las condiciones anidadas porque no evalúa diferentes variables o expresiones, sino diferentes valores de una misma expresión.
+
+> Se recomienda el uso de la [expresión switch](00715-expresionSwitch.md)
+
+<div align=center>
+
+<table>
+<tr>
+<th>Sentencia switch</th>
+<th>Expresión switch</th>
+</tr>
+<tr>
+<td valign=top>
+
+```java
+switch(opcion) {
+   case 1:
+       System.out.println("Iniciando proceso");
+       iniciarProceso();
+       break;
+   case 2:
+       System.out.println("Deteniendo proceso");
+       detenerProceso();
+       break;
+   default:
+       System.out.println("Opción no válida");
+       break;
+}
+```
+</td>
+<td valign=top>
+
+```java
+switch(opcion) {
+   case 1 -> {
+       System.out.println("Iniciando proceso");
+       iniciarProceso();
+   }
+   case 2 -> {
+       System.out.println("Deteniendo proceso");
+       detenerProceso();
+   }
+   default -> System.out.println("Opción no válida");
+}
+```
+</td>
+</tr>
+<tr>
+<td valign=top>
+
+```java
+switch(nota) {
+   case 'A':
+       mensaje = "Excelente";
+       break;
+   case 'B':
+       mensaje = "Notable";
+       break;
+   case 'C':
+       mensaje = "Aprobado";
+       break;
+   default:
+       mensaje = "Suspenso";
+       break;
+}
+```
+</td>
+<td valign=top>
+
+```java
+mensaje = switch(nota) {
+   case 'A' -> "Excelente"
+   case 'B' -> "Notable" 
+   case 'C' -> "Aprobado"
+   default -> "Suspenso"
+};
+```
+</td>
+</tr>
+</table>
+
+</div>

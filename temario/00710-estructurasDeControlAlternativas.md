@@ -3,7 +3,11 @@
 
 Evaluar una condición y ejecuta el bloque de código solo si esa condición es verdadera.
 
+<div align=center>
+
 ![](/images/modelosUML/alternativas001.svg)
+
+</div>
 
 ```java
 if (condicion) 
@@ -14,7 +18,11 @@ if (condicion)
 
 Evalua una condición y ofrece un segundo bloque de código como alternativo, si la condición resulta ser falsa.
 
+<div align=center>
+
 ![](/images/modelosUML/alternativas002.svg)
+
+</div>
 
 ```java
 if (condicion) 
@@ -27,7 +35,11 @@ else
 
 Evalua múltiples condiciones en cadena y decide qué bloque de código ejecutar basado en la primera condición verdadera. Adicionalmente, se puede proponer un bloque de código a ejecutarse si ninguna condición resulta ser verdadera.
 
+<div align=center>
+
 ![](/images/modelosUML/alternativas003.svg)
+
+</div>
 
 ```java
 if (condicion1) 
@@ -39,6 +51,12 @@ else
 ```
 
 ### Condición múltiple por casos
+
+<div align=center>
+
+![](/images/modelosUML/alternativas004.svg)
+
+</div>
 
 Se diferencia de las condiciones anidadas porque no evalúa diferentes variables o expresiones, sino diferentes valores de una misma expresión.
 

@@ -1,0 +1,19 @@
+@startuml
+
+start
+:valor;
+split
+  -> case 1;
+  :Instrucción 1;
+split again
+  -> case 2;
+  :Instrucción 2;
+split again
+  -> case 3;
+  :Instrucción 3;
+split again
+  -> default;
+  :Instrucción default;
+end split
+stop
+@enduml

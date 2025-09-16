@@ -63,4 +63,8 @@ Problema → Análisis → Algoritmo → Programa → Software
 4. **Programa**: Implementación del algoritmo en un lenguaje
 5. **Software**: Producto integrado y funcional
 
-> **Próximo paso**: Estudiaremos qué son exactamente los algoritmos, sus características y cómo diseñarlos.
+---
+
+**Hemos establecido la conexión entre la automatización humana, los procesos organizativos y la necesidad de herramientas sistemáticas. Es momento de profundizar en esas herramientas específicas.**
+
+> **Siguiente**: [Algoritmos](00100-algoritmos.md) - Estudiando qué son exactamente los algoritmos, sus características y cómo diseñarlos.

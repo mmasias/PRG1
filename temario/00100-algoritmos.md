@@ -79,3 +79,9 @@ Se utiliza la notación Big O para expresar la complejidad, por ejemplo:
 - O(log n): Logarítmico
 - O(n): Lineal
 - O(n²): Cuadrático
+
+---
+
+**Hemos visto qué son los algoritmos y sus características fundamentales. Para implementar estos algoritmos en soluciones ejecutables, necesitamos herramientas de comunicación con las máquinas.**
+
+> **Siguiente**: [Lenguajes de programación](00200-lenguajesDeProgramacion.md) - Explorando las herramientas que nos permiten expresar algoritmos de forma que las computadoras puedan ejecutarlos.

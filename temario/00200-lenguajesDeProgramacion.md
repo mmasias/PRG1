@@ -131,3 +131,9 @@ Algunas reflexiones:
 **Características clave**|Uso de bucles, condicionales y asignaciones.|Funciones como ciudadanos de primera clase: pueden ser pasadas como argumentos, retornadas como valores y asignadas a variables.|Programas basados en la definición de relaciones y reglas.
 ||Flujo de control secuencial, con la posibilidad de ramificación y bucles.|Inmutabilidad: Una vez que se crea una estructura de datos, no se puede modificar.|Backtracking: El sistema intenta diferentes soluciones hasta encontrar una que cumpla todas las condiciones.
 |||Uso extensivo de la recursión en lugar de bucles tradicionales.|Declarativo: Se centra en la descripción de la relación entre datos más que en el procedimiento específico para resolver un problema.
+
+---
+
+**Hemos explorado el panorama de los lenguajes de programación y sus paradigmas. Para comenzar nuestra práctica concreta de programación, necesitamos elegir un lenguaje específico y comprender sus características.**
+
+> **Siguiente**: [Java](00300-java.md) - Conociendo el lenguaje que utilizaremos para materializar nuestros algoritmos en programas ejecutables.

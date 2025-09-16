@@ -26,7 +26,7 @@ Definimos **proceso de desarrollo software** como el conjunto total de ***activi
 
 ||Actividad|Rol|Artefacto|
 |-|-|-|-|
-|**Definición**|Unidad de trabajo que puede ser solicitado o realizado por un rol individual y que produce un resultado significativo en el contexto del proyecto|Define el comportamiento y responsabilidad de un individuo o un grupo de individuos juntos como un equipo|Pieza de información que es producida, modificada o usada por un proceso
+|**Definición**|Unidad de trabajo que puede ser solicitado o realizado por un rol individual y que produce un resultado significativo en el contexto del proyecto|Define el comportamiento y responsabilidad de un individuo o un grupo de individuos juntos como un equipo|Pieza de información que es producida, modificada o usada por un proceso|
 |**Ejemplo**|*Implementar una clase, especificar un caso de uso*|*Analista de sistemas,desarrollador, ingeniero de componentes*|*Código fuente, especificación de un caso de uso, arquitectura del software*|
 
 ## ¿Para qué?
@@ -51,10 +51,14 @@ Efectividad (eficacia y eficiencia) del proyecto de desarrollo de software
 |-|-|
 |La mera enumeración de todos los roles, actividades y artefactos no alcanza a constituir un proceso|Un proceso es un flujo de trabajo, una secuencia de actividades que producen algún valor observable en artefactos y muestra las interacciones entre los roles|
 
-
 |Sin requisitos|Con requisitos|Iterativas|
 |-|-|-|
 |Top-Down|En cascada|[Rational Unified Process](https://github.com/mmasias/IdSw1/blob/main/temario/rup.md)|
 |Bottom-Up|En V, doble Cascada|Agiles (XP, CrystalClear, Scrum, Kanban, …​)|
 |||De software libre: La Catedral y el Bazar|
 
+---
+
+**Hemos visto la organización y metodología del desarrollo software. Pero para materializar estos procesos en soluciones técnicas concretas, necesitamos herramientas sistemáticas de resolución de problemas.**
+
+> **Siguiente**: [Del problema a la solución sistemática](00003-preAlgoritmos.md) - Descubriendo cómo conectar los procesos organizativos con las herramientas algorítmicas.

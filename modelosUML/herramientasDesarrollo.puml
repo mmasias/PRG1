@@ -2,34 +2,42 @@ hide members
 hide circle
 hide stereotypes
 
-class proceso as "Proceso SW"
+class automatizacion as "Automatización\nhumana"
+class programa as "Programa\nsimple"
+class programaComplejo as "Programa\ncomplejo"
+class procesoSW as "Proceso SW"
 class algoritmo as "Algoritmo"
-class programa as "Programa"
-class software as "Software"
 
-note top of proceso
-Metodología y
-organización
-end note
-
-note top of algoritmo
-Lógica de
-solución
+note top of automatizacion
+Necesidad histórica:
+simplificar y reutilizar
 end note
 
 note top of programa
 Implementación
-en código
+directa
 end note
 
-note top of software
-Producto
-final
+note top of programaComplejo
+Mayor complejidad
+y funcionalidad
 end note
 
-proceso -right-> algoritmo : "define"
-algoritmo -right-> programa : "se codifica en"
-programa -right-> software : "forma parte de"
+note top of procesoSW
+Metodología para
+gestionar la complejidad
+end note
 
-proceso -down-> software : "produce"
-note on link : "a través de"
+note right of algoritmo
+Herramienta metodológica
+transversal que se usa
+en cualquier nivel
+end note
+
+automatizacion -right-> programa : "evoluciona hacia"
+programa -right-> programaComplejo : "crece hacia"
+programaComplejo -right-> procesoSW : "requiere"
+
+algoritmo -up-> programa : "se usa en"
+algoritmo -up-> programaComplejo : "se usa en"
+algoritmo -up-> procesoSW : "se usa en"

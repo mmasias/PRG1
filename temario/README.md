@@ -1,6 +1,9 @@
 # Temario
 
 - [x] [Introducción](00000-introduccion.md)
+  - [x] [Disciplinas del software](00001-disciplinasSw.md)
+  - [x] [El proceso del software](00002-procesoSw.md)
+  - [x] [Del problema a la solución](00003-preAlgoritmos.md)
 - [x] [Algoritmos](00100-algoritmos.md)
 - [x] [Lenguajes de programación](00200-lenguajesDeProgramacion.md)
 - **Programación**

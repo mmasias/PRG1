@@ -2,11 +2,11 @@
 
 ## ¿Por qué?
 
-Hemos visto que los procesos de software buscan **efectividad** en el desarrollo: cumplir ámbito, tiempo y coste, con calidad y mantenibilidad. Pero surge una pregunta fundamental:
+Desde el ábaco hasta los ordenadores, **la humanidad ha buscado automatizar tareas para simplificar y reutilizar**. Esta necesidad ancestral se materializa hoy en el desarrollo de software, donde los procesos buscan **efectividad**: cumplir ámbito, tiempo y coste, con calidad y mantenibilidad.
 
-**¿Cómo materializamos esa efectividad en soluciones concretas?**
+Pero surge una pregunta fundamental: **¿Cómo conectamos esa necesidad humana de automatización con soluciones técnicas concretas?**
 
-Los procesos nos organizan, las disciplinas nos estructuran, pero **necesitamos herramientas precisas** para:
+Los procesos nos organizan, las disciplinas nos estructuran, pero **necesitamos herramientas precisas** que materialicen la automatización:
 
 - Resolver problemas de manera **sistemática y repetible**
 - Transformar requerimientos en **soluciones verificables**
@@ -15,7 +15,7 @@ Los procesos nos organizan, las disciplinas nos estructuran, pero **necesitamos 
 
 |||
 |-|-|
-|![](/images/modelosUML/procesoAAlgoritmo.svg)|La brecha entre *tener un proceso* y *resolver el problema técnico*|
+|![Evolución desde automatización hacia algoritmos](/images/modelosUML/procesoAAlgoritmo.svg)|La evolución desde la automatización humana hasta las herramientas algorítmicas|
 
 ## ¿Qué?
 
@@ -29,7 +29,7 @@ La **metodología algorítmica** es el puente entre el proceso de desarrollo y l
 |• Complejas de mantener|• Estructura clara y modificable|
 |• Propensas a errores|• Lógica explícita y trazable|
 
-![](/images/modelosUML/herramientasDesarrollo.svg)
+![Herramientas de desarrollo desde automatización hasta software](/images/modelosUML/herramientasDesarrollo.svg)
 
 ## ¿Para qué?
 
@@ -53,7 +53,7 @@ Los **algoritmos** nos permiten:
 
 La **transición del proceso al algoritmo** sigue esta progresión:
 
-```
+```text
 Problema → Análisis → Algoritmo → Programa → Software
 ```
 

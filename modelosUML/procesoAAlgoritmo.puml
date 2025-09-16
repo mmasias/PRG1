@@ -1,7 +1,24 @@
 hide members
 hide circle
 
-class problema as "Problemas del\ndesarrollo SW" <<¿Por qué?>>
+class automatizacion as "Necesidad humana de\nautomatización" <<Origen>>
+note right
+Desde el ábaco hasta
+los ordenadores:
+• Simplificar tareas
+• Reutilizar soluciones
+• Sistematizar procesos
+end note
+
+class algoritmo as "Algoritmos" <<Herramienta metodológica>>
+note left
+Secuencias finitas y
+bien definidas de
+instrucciones para
+resolver problemas
+end note
+
+class problema as "Problemas del\ndesarrollo SW" <<Manifestación moderna>>
 note right
 Inefectividad en:
 • Variables económicas
@@ -10,29 +27,15 @@ Inefectividad en:
 • Complejidad arbitraria
 end note
 
-class proceso as "Procesos de\ndesarrollo" <<¿Qué?>>
+class proceso as "Procesos de\ndesarrollo" <<Organización para complejidad>>
 note left
 Actividades organizadas
 Roles definidos
 Artefactos estructurados
 end note
 
-class necesidad as "Necesidad de\nprecisión" <<Brecha>>
-note right
-Los procesos necesitan
-métodos sistemáticos
-para resolver problemas
-de forma repetible
-end note
-
-class algoritmo as "Algoritmos" <<¿Solución?>>
-note left
-Secuencias finitas y
-bien definidas de
-instrucciones para
-resolver problemas
-end note
-
-problema -down-> proceso : "motiva"
-proceso -down-> necesidad : "requiere"
-necesidad -down-> algoritmo : "lleva a"
+automatizacion -down-> algoritmo : "da lugar a"
+automatizacion -down-> problema : "se manifiesta en"
+problema -down-> proceso : "requiere cuando hay complejidad"
+algoritmo -right-> problema : "ayuda a resolver"
+algoritmo -right-> proceso : "se usa en"

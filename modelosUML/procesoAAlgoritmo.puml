@@ -1,0 +1,38 @@
+hide members
+hide circle
+
+class problema as "Problemas del\ndesarrollo SW" <<¿Por qué?>>
+note right
+Inefectividad en:
+• Variables económicas
+• Calidad del software
+• Mantenibilidad
+• Complejidad arbitraria
+end note
+
+class proceso as "Procesos de\ndesarrollo" <<¿Qué?>>
+note left
+Actividades organizadas
+Roles definidos
+Artefactos estructurados
+end note
+
+class necesidad as "Necesidad de\nprecisión" <<Brecha>>
+note right
+Los procesos necesitan
+métodos sistemáticos
+para resolver problemas
+de forma repetible
+end note
+
+class algoritmo as "Algoritmos" <<¿Solución?>>
+note left
+Secuencias finitas y
+bien definidas de
+instrucciones para
+resolver problemas
+end note
+
+problema -down-> proceso : "motiva"
+proceso -down-> necesidad : "requiere"
+necesidad -down-> algoritmo : "lleva a"

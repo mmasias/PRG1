@@ -1,0 +1,35 @@
+hide members
+hide circle
+hide stereotypes
+
+class proceso as "Proceso SW"
+class algoritmo as "Algoritmo"
+class programa as "Programa"
+class software as "Software"
+
+note top of proceso
+Metodología y
+organización
+end note
+
+note top of algoritmo
+Lógica de
+solución
+end note
+
+note top of programa
+Implementación
+en código
+end note
+
+note top of software
+Producto
+final
+end note
+
+proceso -right-> algoritmo : "define"
+algoritmo -right-> programa : "se codifica en"
+programa -right-> software : "forma parte de"
+
+proceso -down-> software : "produce"
+note on link : "a través de"

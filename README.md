@@ -23,6 +23,6 @@ Se recomienda además el leer los artículos contenidos en la carpeta de [docume
 
 |Actual|[[25][26]](https://github.com/mmasias/25-26-PRG1)|
 |:-|:-
-|**Anteriores**|[[24][25]](https://github.com/mmasias/24-25-PRG1)|[[23][24]](https://github.com/mmasias/23-24-PRG1) - [[22][23]](https://github.com/mmasias/prg1-22-23)
+|**Anteriores**|[[24][25]](https://github.com/mmasias/24-25-PRG1) - [[23][24]](https://github.com/mmasias/23-24-PRG1) - [[22][23]](https://github.com/mmasias/prg1-22-23)
 
 </div>

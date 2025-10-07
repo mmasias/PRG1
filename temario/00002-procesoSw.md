@@ -27,7 +27,10 @@ Definimos **proceso de desarrollo software** como el conjunto total de ***activi
 ||Actividad|Rol|Artefacto|
 |-|-|-|-|
 |**Definición**|Unidad de trabajo que puede ser solicitado o realizado por un rol individual y que produce un resultado significativo en el contexto del proyecto|Define el comportamiento y responsabilidad de un individuo o un grupo de individuos juntos como un equipo|Pieza de información que es producida, modificada o usada por un proceso|
-|**Ejemplo**|*Implementar una clase, especificar un caso de uso*|*Analista de sistemas,desarrollador, ingeniero de componentes*|*Código fuente, especificación de un caso de uso, arquitectura del software*|
+||Tiene un propósito claro, generalmente expresado en términos de crear o modificar artefactos.|El comportamiento se expresa en términos de actividades que realiza un rol.|Usados como entrada por los diferentes roles para realizar una actividad y son el resultado o salida de tales actividades
+||Cada actividad es asignada a un rol específico.|La responsabilidad de un rol se expresa generalmente en función a los artefactos que crea, modifica o controla.|Sujetos al control de versiones y gestión de la configuración
+||La granularidad de una actividad es generalmente entre unas horas o unos pocos días.
+|**Ejemplo**|*Implementar una clase, especificar un caso de uso*|*Analista de sistemas,desarrollador, ingeniero de componentes*<br>No son individuos, sino títulos de trabajo.|*Código fuente, especificación de un caso de uso, arquitectura del software*|
 
 ## ¿Para qué?
 
@@ -47,15 +50,19 @@ Efectividad (eficacia y eficiencia) del proyecto de desarrollo de software
 
 ## ¿Cómo?
 
+<div align=center>
+
 |||
 |-|-|
 |La mera enumeración de todos los roles, actividades y artefactos no alcanza a constituir un proceso|Un proceso es un flujo de trabajo, una secuencia de actividades que producen algún valor observable en artefactos y muestra las interacciones entre los roles|
 
 |Sin requisitos|Con requisitos|Iterativas|
 |-|-|-|
-|Top-Down|En cascada|[Rational Unified Process](https://github.com/mmasias/IdSw1/blob/main/temario/rup.md)|
+|Top-Down|En cascada|[**Rational Unified Process**](https://github.com/mmasias/IdSw1/blob/main/temario/rup.md)|
 |Bottom-Up|En V, doble Cascada|Agiles (XP, CrystalClear, Scrum, Kanban, …​)|
 |||De software libre: La Catedral y el Bazar|
+
+</div>
 
 ---
 

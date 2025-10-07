@@ -20,6 +20,8 @@ El objetivo final es mejorar la claridad y mantenibilidad del código.
 
 - **Implementación en java**: Por ejemplo, se establece la condición inicial de `hayaVida` al principio. Dentro del bucle, se ejecuta el código necesario y, al final de cada iteración, se actualiza `hayaVida` según las nuevas condiciones (ejemplo: `hayaVida = energia > 0`). Esto separa la lógica del estado de la lógica de procesamiento, haciendo el código más estructurado y claro.
 
+**Enfoque recomendado:**
+
 ```java
 boolean hayaVida = energia > 0;
 
@@ -30,3 +32,13 @@ while (hayaVida) {
     hayaVida = energia > 0;
 }
 ```
+
+**Enfoque no recomendado:**
+
+```java
+while (energia > 0 && !derrotado && turno < maxTurnos) {
+    // Procesamiento
+}
+```
+
+La variable de estado mejora la legibilidad y facilita la incorporación de múltiples condiciones de salida sin aumentar la complejidad de la expresión de control.

@@ -2,7 +2,7 @@
 
 ## ¿Por qué?
 
-El bloque de código surge de la necesidad de agrupar y organizar múltiples instrucciones en una unidad lógica. En programación, a menudo queremos que ciertas instrucciones se ejecuten juntas o que se traten como una sola entidad, especialmente cuando introducimos estructuras de control de flujo.
+El ***bloque de código*** surge de la necesidad de agrupar y organizar múltiples instrucciones en una unidad lógica. En programación, a menudo queremos que ciertas instrucciones se ejecuten juntas o que se traten como una sola entidad, especialmente cuando introducimos estructuras de control de flujo.
 
 ## ¿Qué?
 

@@ -2,11 +2,11 @@
 
 ## ¿Por qué?
 
-La expresión switch, introducida en Java 12, resuelve los problemas de seguridad y verbosidad de la sentencia switch tradicional eliminando el riesgo de fall-through y la necesidad de break.
+La expresión switch, introducida en Java 12, resuelve los problemas de seguridad y verbosidad de la sentencia switch tradicional eliminando el riesgo de ejecución en cascada y la necesidad de break.
 
 ## ¿Qué?
 
-Una estructura de control que evalúa una expresión y retorna un valor basado en casos coincidentes, usando la sintaxis con flecha (->).
+Una estructura de control que evalúa una expresión y retorna un valor basado en casos coincidentes, usando la sintaxis con flecha (->). A diferencia de la sentencia switch tradicional, cada caso forma un **bloque de código** independiente con su propio **ámbito**, eliminando problemas de ejecución en cascada y creando fronteras claras entre casos.
 
 ## ¿Para qué?
 
@@ -61,20 +61,6 @@ String categoria = switch (puntos) {
 <td valign=top>
 
 ```java
-
-```
-</td>
-<td valign=top>
-
-```java
-
-```
-</td>
-</tr>
-<tr>
-<td valign=top>
-
-```java
 int dia = 3;
 String nombreDia;
 
@@ -105,65 +91,33 @@ String nombreDia = switch (dia) {
 ```
 </td>
 </tr>
-<tr>
-<td valign=top>
-
-```java
-
-```
-</td>
-<td valign=top>
-
-```java
-
-```
-</td>
-</tr>
-</tr>
-<tr>
-<td valign=top>
-
-```java
-
-```
-</td>
-<td valign=top>
-
-```java
-
-```
-</td>
-</tr>
-</tr>
-<tr>
-<td valign=top>
-
-```java
-
-```
-</td>
-<td valign=top>
-
-```java
-
-```
-</td>
-</tr>
-</tr>
-<tr>
-<td valign=top>
-
-```java
-
-```
-</td>
-<td valign=top>
-
-```java
-
-```
-</td>
-</tr>
 </table>
 
 </div>
+
+## El problema de la ejecución en cascada
+
+La sentencia switch tradicional tiene un comportamiento peligroso: si olvidas el `break`, la ejecución continúa al siguiente caso:
+
+```java
+int dia = 2;
+String mensaje;
+
+switch (dia) {
+    case 1:
+        mensaje = "Lunes";
+    case 2:
+        mensaje = "Martes";
+    case 3:
+        mensaje = "Miércoles";
+        break;
+    default:
+        mensaje = "Otro día";
+}
+
+System.out.println(mensaje);
+```
+
+**Resultado inesperado:** `"Miércoles"` (no `"Martes"` como esperábamos)
+
+La expresión switch elimina este problema completamente: cada caso es independiente y no puede "caer" al siguiente.

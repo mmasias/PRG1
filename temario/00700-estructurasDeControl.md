@@ -12,8 +12,8 @@ Un bloque de código es un conjunto de instrucciones agrupadas que se tratan com
 
 ## ¿Para qué?
 
-- **Organización**: Facilita la lectura y comprensión del código al agrupar instrucciones relacionadas.
 - **Ámbito**: Define el ámbito de las variables. El ámbito determina dónde una variable puede ser accesible y dónde no. Cada bloque crea su propio "mundo de visibilidad" donde las variables del exterior pueden verse desde el interior, pero las del interior no pueden verse desde el exterior.
+- **Organización**: Facilita la lectura y comprensión del código al agrupar instrucciones relacionadas.
 - **Control de Flujo**: Sirve como base para estructuras de control de flujo, permitiendo que ciertos bloques de código se ejecuten bajo condiciones específicas o repetidamente.
 
 ## ¿Cómo?

@@ -6,9 +6,13 @@ Los programas requieren tomar decisiones basadas en condiciones específicas. Si
 
 ## ¿Qué?
 
-Las estructuras alternativas, también denominadas condicionales o de selección, son construcciones que permiten ejecutar diferentes bloques de código según el resultado de evaluar una o más condiciones. Estas estructuras determinan el flujo de ejecución del programa mediante expresiones booleanas que resultan en verdadero o falso.
+||||
+|-|-|-|
+|Las estructuras alternativas, también denominadas condicionales o de selección, son construcciones que permiten ejecutar diferentes bloques de código según el resultado de evaluar una o más condiciones.|Utilizan los **bloques de código** que vimos anteriormente, donde cada rama de la estructura alternativa define su propio **ámbito**.|Estas estructuras determinan el flujo de ejecución del programa mediante expresiones booleanas que resultan en verdadero o falso.
 
 ## ¿Para qué?
+
+<div align=center>
 
 |||
 |-|-|
@@ -17,6 +21,8 @@ Control de flujo|Dirigir la ejecución según el estado del programa
 Manejo de casos|Responder a diferentes escenarios posibles
 Implementación de lógica|Materializar reglas de negocio complejas
 Prevención de errores|Evitar operaciones inválidas mediante verificaciones previas
+
+</div>
 
 ## ¿Cómo?
 
@@ -174,6 +180,30 @@ mensaje = switch(nota) {
 |switch|Múltiples valores de una expresión|2+|Sí (expresión)|
 
 </div>
+
+### Ámbito en estructuras alternativas
+
+Cada rama de una estructura alternativa crea su propio ámbito, siguiendo las reglas que establecimos para los bloques de código:
+
+```java
+int x = 10;
+if (x > 5) {
+    int y = 20;
+    System.out.println(x + y);
+}
+
+if (x < 15) {
+    int y = 30;
+    System.out.println(y);
+}
+```
+
+**Principios aplicados:**
+
+- Variables del ámbito exterior (como `x`) son visibles en todas las ramas
+- Variables declaradas en una rama (`y`) solo existen en esa rama específica
+- Diferentes ramas pueden declarar variables con el mismo nombre sin conflicto
+- Al salir de cada rama, su ámbito se destruye automáticamente
 
 ### Operador ternario
 

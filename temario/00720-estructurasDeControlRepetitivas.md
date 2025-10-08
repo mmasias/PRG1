@@ -8,9 +8,11 @@
 
 ## ¿Qué?
 
-Las estructuras repetitivas, también denominadas bucles o iteraciones, son **construcciones que permiten ejecutar un bloque de código múltiples veces según una condición establecida**. Existen tres tipos principales que difieren en cuándo evalúan la condición de continuación y cómo gestionan el control del flujo.
+Las estructuras repetitivas, también denominadas bucles o iteraciones, son **construcciones que permiten ejecutar un bloque de código múltiples veces según una condición establecida**. Utilizan los **bloques de código** que vimos anteriormente. Existen tres tipos principales que difieren en cuándo evalúan la condición de continuación y cómo gestionan el control del flujo.
 
 ## ¿Para qué?
+
+<div align=center>
 
 |||
 |-|-|
@@ -19,6 +21,8 @@ Procesamiento de colecciones|Recorrer y manipular conjuntos de datos
 Validación|Solicitar entrada hasta obtener datos válidos
 Cálculo iterativo|Realizar operaciones que requieren múltiples pasos
 Búsqueda|Localizar elementos que cumplan criterios específicos
+
+</div>
 
 ## ¿Cómo?
 
@@ -45,12 +49,25 @@ Evalúa la condición **antes** de ejecutar el bloque. Si la condición es falsa
 ```java
 int intentos = 0;
 boolean encontrado = false;
+boolean debeContinuar = !encontrado && intentos < 5;
 
+while (debeContinuar) {
+    encontrado = buscarElemento();
+    intentos++;
+    debeContinuar = !encontrado && intentos < 5;
+}
+```
+
+***NOTA:*** En código existente, es frecuente encontrar la condición directamente en el while. Aunque funcional, este enfoque carece del ritual de cierre que garantiza verificación completa de estados antes de cada iteración. Lo siguiente es una forma no recomendada (pero común en código existente)
+
+```java
 while (!encontrado && intentos < 5) {
     encontrado = buscarElemento();
     intentos++;
 }
 ```
+
+Consulte la [gestión de bucles con estados](../documentos/gestionDeBuclesConEstados.md) para comprender por qué el primer enfoque es superior.
 
 ### Iterativa indeterminada 1..N (do-while)
 
@@ -73,11 +90,23 @@ Evalúa la condición **después** de ejecutar el bloque, garantizando al menos 
 **Ejemplo:**
 
 ```java
-int valorIngresado;
+int edad;
+boolean esValido;
+
 do {
-    System.out.print("Ingrese un valor entre 1 y 10: ");
-    valorIngresado = scanner.nextInt();
-} while (valorIngresado < 1 || valorIngresado > 10);
+    System.out.print("Ingrese edad: ");
+    edad = scanner.nextInt();
+    esValido = edad >= 18 && edad <= 100 && edadCoherenteConDNI(edad);
+} while (!esValido);
+```
+
+***NOTA:*** La forma común (pero no recomendada) sería evaluar la condición directamente:
+
+```java
+do {
+    System.out.print("Ingrese edad: ");
+    edad = scanner.nextInt();
+} while (edad < 18 || edad > 100 || !edadCoherenteConDNI(edad));
 ```
 
 ### Iterativa determinada (for)
@@ -106,6 +135,8 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
+El bucle `for`, por su estructura formal con inicialización, condición e incremento explícitos, raramente requiere gestión de estados adicional. Su diseño ya proporciona control claro y predecible del flujo.
+
 ### Comparación entre estructuras
 
 <div align=center>
@@ -117,6 +148,38 @@ for (int i = 0; i < 10; i++) {
 |Uso típico|Condición indefinida|Validación de entrada|Iteraciones conocidas|
 
 </div>
+
+### Ámbito en estructuras repetitivas
+
+Las variables declaradas dentro del bloque de un bucle se crean y destruyen en cada iteración, siguiendo las reglas establecidas para bloques de código:
+
+#### Variables en bucles for
+
+```java
+for (int i = 0; i < 3; i++) {
+    int temporal = i * 2;
+    System.out.println(temporal);
+}
+```
+
+- La variable `i` existe solo dentro del bucle for
+- La variable `temporal` se crea y destruye en cada iteración
+- Al finalizar el bucle, tanto `i` como `temporal` dejan de existir
+
+#### Ámbito de variables externas
+
+```java
+int contador = 0;
+while (contador < 5) {
+    int cuadrado = contador * contador;
+    System.out.println(cuadrado);
+    contador++;
+}
+```
+
+- `contador` existe antes y después del bucle (ámbito exterior)
+- `cuadrado` solo existe durante cada iteración (ámbito interior)
+- `contador` puede modificarse desde dentro del bucle
 
 ### Casos de uso documentados
 

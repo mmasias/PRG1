@@ -4,7 +4,7 @@
 
 El ***bloque de código*** surge de la necesidad de agrupar y organizar múltiples instrucciones en una unidad lógica. En programación, a menudo queremos que ciertas instrucciones se ejecuten juntas o que se traten como una sola entidad.
 
-Los bloques de código nos permiten crear **modularidad** al encapsular funcionalidad relacionada. Además, cada bloque establece su propio **ámbito**, creando fronteras claras que determinan dónde viven y mueren nuestras variables. Esta combinación de agrupación lógica y control de ámbito es fundamental para escribir código organizado y predecible.
+Los bloques de código nos permiten conseguir **modularidad** al encapsular funcionalidad relacionada. Además, cada bloque establece su propio **ámbito**, creando fronteras claras que determinan dónde viven y mueren nuestras variables. Esta combinación de agrupación lógica y control de ámbito es fundamental para escribir código organizado y predecible.
 
 ## ¿Qué?
 

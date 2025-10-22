@@ -1,5 +1,6 @@
 # Documentos varios
 
+- [Acerca de los break y continue en código](acercaDelBreak.md), y por qué se han de evitar.
 - [Gestión de bucles con estados](gestionDeBuclesConEstados.md), una reflexión acerca de esta propuesta.
 - [¿If o ternario?](ternarioOif.md), breves líneas acerca de cuándo y cómo utilizar una y otra notación. O no.
 - [Clean Code](cleanCode.md), una introducción al concepto y filosofía detrás del código limpio.

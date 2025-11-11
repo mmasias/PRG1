@@ -148,7 +148,7 @@ Declaración y luego asignación|`int[] matriz4;`<br>`matriz4 = new int[]{1, 2, 
 `e == f`|*true* porque se trata de la ambas son null
 
 <table>
-<tr><td align=center><b>¿Igual?</b></td><td align=center><b>¿Lo mismo?</b></td></tr>
+<tr><td></td><td align=center><b>¿Igual?</b></td><td align=center><b>¿Lo mismo?</b></td></tr>
 
 <tr><td>
 

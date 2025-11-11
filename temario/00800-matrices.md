@@ -62,6 +62,8 @@ Estos literales representan matrices, pero para poder usarlas en el código, nor
 
 ### Variable referencia
 
+Una variable referencia es un contenedor que puede almacenar la dirección de una matriz. Se declara especificando el tipo de elementos que contendrá la matriz, seguido de corchetes.
+
 <div align=center>
 
 `tipo[] <referencia>`
@@ -76,11 +78,16 @@ Estos literales representan matrices, pero para poder usarlas en el código, nor
 
 > *NOTA* En Java no manipulamos direcciones de memoria directamente como en lenguajes como C/C++. La referencia es una abstracción que nos permite acceder a la matriz.
 
-```java
-String[] asignaturas = {"Programación", "Matemática", "Física"};
+<div align=center>
 
-int[] notas = {7, 9, 8};
-```
+|||
+|-|-|
+String[] asignaturas;|Declara una variable referencia a una matriz de Strings
+int[] notas;|Declara una variable referencia a una matriz de enteros
+double[] promedios;|Referencia a matriz de decimales
+boolean[] estados;|Referencia a matriz de booleanos
+
+</div>
 
 ### Inicialización de matrices
 

@@ -135,10 +135,10 @@ Declaración y luego asignación|`int[] matriz4;`<br>`matriz4 = new int[]{1, 2, 
 `int[] d = c;`|Declaro una variable referencia y le asigno la dirección que tiene almacenada la variable c
 `int[] e = null;`|Declaro una variable referencia y le asigno el valor null (no apunta a ningún array)
 `int[] f = e;`|Declaro una variable referencia y le asigno el valor de e (que es null)
-`System.out.println(a == b);`|Imprime *true* porque se trata de la misma referencia
-`System.out.println(a == c);`|Imprime *false* porque se trata de diferentes referencias
-`System.out.println(c == d);`|Imprime *true* porque se trata de la misma referencia
-`System.out.println(e == f);`|Imprime *true* porque se trata de la ambas son null
+`a == b`|*true* porque se trata de la misma referencia
+`a == c`|*false* porque se trata de diferentes referencias
+`c == d`|*true* porque se trata de la misma referencia
+`e == f`|*true* porque se trata de la ambas son null
 
 <table>
 <tr><td align=center><b>¿Igual?</b></td><td align=center><b>¿Lo mismo?</b></td></tr>

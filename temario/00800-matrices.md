@@ -149,7 +149,21 @@ Declaración y luego asignación|`int[] matriz4;`<br>`matriz4 = new int[]{1, 2, 
 
 <table>
 <tr><td align=center><b>¿Igual?</b></td><td align=center><b>¿Lo mismo?</b></td></tr>
+
 <tr><td>
+
+```java
+
+int[] a = {1,2,3}`;
+int[] b = a;
+int[] c = {1,2,3};
+int[] d = c;
+int[] e = null;
+int[] f = e;
+
+```
+
+</td><td>
 
 ||a|b|c|d|e|f|
 |-|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -172,8 +186,8 @@ Declaración y luego asignación|`int[] matriz4;`<br>`matriz4 = new int[]{1, 2, 
 |**f**|🤔|🤔|🤔|🤔|🤔||
 </td></tr>
 
-
-<tr><td align=center>
+<tr><td>
+</td><td align=center>
 
 <details>
 

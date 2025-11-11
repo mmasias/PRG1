@@ -125,16 +125,20 @@ Declaración y luego asignación|`int[] matriz4;`<br>`matriz4 = new int[]{1, 2, 
 
 > #*2Think*: Igual no es lo mismo que lo mismo.
 
-```java
-int[] a = {1,2,3};
-int[] b = a;
-int[] c = {1,2,3};
-int[] d = c;
-int[] e = null;
-int[] f = e;
-```
-
 <div align=center>
+
+|||
+|-|-|
+`int[] a = {1,2,3}`;|Declaro una variable referencia y le asigno a un array de 3 enteros
+`int[] b = a;`|Declaro una variable referencia y le asigno la dirección que tiene almacenada la variable a
+`int[] c = {1,2,3};`|Declaro una variable referencia y le asigno un nuevo array de 3 enteros con los mismos valores que a
+`int[] d = c;`|Declaro una variable referencia y le asigno la dirección que tiene almacenada la variable c
+`int[] e = null;`|Declaro una variable referencia y le asigno el valor null (no apunta a ningún array)
+`int[] f = e;`|Declaro una variable referencia y le asigno el valor de e (que es null)
+`System.out.println(a == b);`|Imprime *true* porque se trata de la misma referencia
+`System.out.println(a == c);`|Imprime *false* porque se trata de diferentes referencias
+`System.out.println(c == d);`|Imprime *true* porque se trata de la misma referencia
+`System.out.println(e == f);`|Imprime *true* porque se trata de la ambas son null
 
 <table>
 <tr><td align=center><b>¿Igual?</b></td><td align=center><b>¿Lo mismo?</b></td></tr>

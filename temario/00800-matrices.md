@@ -28,6 +28,8 @@ Habiendo manejado información, a menudo nos encontramos con el desafío de mane
 
 **Una matriz (o array (o tabla (o vector))) es una colección de elementos, todos del mismo tipo, almacenados en una estructura de datos contigua.**
 
+> En Java: *array* (término técnico) ≡ *matriz* (concepto matemático) ≡ *tabla* (representación visual)
+
 Los elementos de un array se almacenan en posiciones consecutivas en la memoria y cada uno de ellos se puede acceder directamente utilizando un índice o una clave numérica. Las matrices pueden ser de una dimensión (como una lista lineal de elementos) o multidimensionales (como tablas de dos o más dimensiones).
 
 ## ¿Para qué?
@@ -42,6 +44,22 @@ Los elementos de un array se almacenan en posiciones consecutivas en la memoria 
 
 ## ¿Cómo? - *En java*
 
+### Una matriz
+
+Podemos representar matrices directamente con literales, como se muestra a continuación:
+
+<div align=center>
+
+|||
+|-|-|
+`{1, 2, 3}`|Matriz de enteros
+`{0.3, 5.23, 6.675, 9}`|Matriz de dobles
+`{"Programación", "Matemática", "Física", "Tecnología y estructura de ordenadores", "Fundamentos de proyectos de software"}`|Matriz de Strings
+
+</div>
+
+Estos literales representan matrices, pero para poder usarlas en el código, normalmente las asignamos a una variable referencia.
+
 ### Variable referencia
 
 <div align=center>
@@ -50,8 +68,32 @@ Los elementos de un array se almacenan en posiciones consecutivas en la memoria 
 
 ||Una<br>Referencia|Así como un<br>Acceso direto|
 |-|-|-|
-|**No es**|Matriz|Archivo
+|**No es**|La matriz|El archivo
 |**Tampoco es**|Dirección de la matriz|Dónde está el archivo
+|**Es**|La dirección de memoria|La ruta del archivo
+
+</div>
+
+> *NOTA* En Java no manipulamos direcciones de memoria directamente como en lenguajes como C/C++. La referencia es una abstracción que nos permite acceder a la matriz.
+
+```java
+String[] asignaturas = {"Programación", "Matemática", "Física"};
+
+int[] notas = {7, 9, 8};
+```
+
+### Inicialización de matrices
+
+Hay varias formas de crear matrices:
+
+<div align=center>
+
+|||
+|-|-|
+Literal directo (solo en declaración)|`int[] matriz1 = {1, 2, 3};`
+Con new + literal|`int[] matriz2 = new int[]{1, 2, 3};`
+Con new + tamaño (se inicializa con valores por defecto)|`int[] matriz3 = new int[3];  // [0, 0, 0]`
+Declaración y luego asignación|`int[] matriz4;`<br>`matriz4 = new int[]{1, 2, 3};`
 
 </div>
 
@@ -63,7 +105,7 @@ Los elementos de un array se almacenan en posiciones consecutivas en la memoria 
 
 ||Operador|Operandos|Devuelve|
 |-|-|-|-|
-**new**|unario prefijo|tipo de matriz|Dirección de memoria donde se ha reservado el espacio para dicha matriz
+**new**|unario prefijo|tipo de matriz|Dirección de memoria donde se ha reservado el espacio para una matriz
 
 </div>
 
@@ -73,10 +115,10 @@ Los elementos de un array se almacenan en posiciones consecutivas en la memoria 
 
 |||||
 |-|-|-|-|
-|`=`|Asignación|`<referenciaV>=<direcciónV>`|Asigna la dirección a la referencia, siendo del mismo tipo.
+|`=`|Asignación|`<referenciaV> = <direcciónV>`|Asigna la dirección a la referencia, siendo del mismo tipo.
 |`.length`|Longitud|`<direcciónV>.length`|Devuelve la longitud de la matriz.
-|`==`|Comparación|`<direcciónV-I>==<direcciónV-II>`|determina si dos direcciones a vectores del mismo tipo son iguales.
-|`!=`|Comparación|`<direcciónV-I>!=<direcciónV-II>`|determina si dos direcciones a vectores del mismo tipo son distintas.
+|`==`|Comparación|`<direcciónV-I> == <direcciónV-II>`|determina si dos direcciones a vectores del mismo tipo son iguales.
+|`!=`|Comparación|`<direcciónV-I> != <direcciónV-II>`|determina si dos direcciones a vectores del mismo tipo son distintas.
 |`[expresión]`||`<direcciónV-I>[expresión]`|accede a la variable que ocupa la posición dada por la expresión entera, numerada de cero al anterior a la longitud.
 
 </div>
@@ -152,7 +194,7 @@ Number, string, boolean, undefined|Las propias matrices pudiendo construir matri
 <div align=center>
 
 |Tipo|Valor por defecto|
-|-|-|
+|-|:-:|
 |Número|0|
 |Lógico|false|
 |Caracter|\0|

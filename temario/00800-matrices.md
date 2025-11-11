@@ -82,10 +82,10 @@ Una variable referencia es un contenedor que puede almacenar la dirección de un
 
 |||
 |-|-|
-String[] asignaturas;|Declara una variable referencia a una matriz de Strings
-int[] notas;|Declara una variable referencia a una matriz de enteros
-double[] promedios;|Referencia a matriz de decimales
-boolean[] estados;|Referencia a matriz de booleanos
+`String[] asignaturas;`|Declara una variable referencia a una matriz de Strings
+`int[] notas;`|Declara una variable referencia a una matriz de enteros
+`double[] promedios;`|Referencia a matriz de decimales
+`boolean[] estados;`|Referencia a matriz de booleanos
 
 </div>
 
@@ -112,7 +112,7 @@ Declaración y luego asignación|`int[] matriz4;`<br>`matriz4 = new int[]{1, 2, 
 
 ||Operador|Operandos|Devuelve|
 |-|-|-|-|
-**new**|unario prefijo|tipo de matriz|Dirección de memoria donde se ha reservado el espacio para una matriz
+**`new`**|unario prefijo|tipo de matriz|Dirección de memoria donde se ha reservado el espacio para una matriz
 
 </div>
 
@@ -193,14 +193,14 @@ int[] f = e;
 
 <summary>Respuesta</summary>
 
-Misma **referencia**
+Mismo **contenido**
 
 ||a|b|c|d|e|f|
 |-|-|-|-|-|-|-|
-|**a**|✓|✓|✗|✗|✗|✗|
-|**b**|✓|✓|✗|✗|✗|✗|
-|**c**|✗|✗|✓|✓|✗|✗|
-|**d**|✗|✗|✓|✓|✗|✗|
+|**a**|✓|✓|✓|✓|✗|✗|
+|**b**|✓|✓|✓|✓|✗|✗|
+|**c**|✓|✓|✓|✓|✗|✗|
+|**d**|✓|✓|✓|✓|✗|✗|
 |**e**|✗|✗|✗|✗|✓|✓|
 |**f**|✗|✗|✗|✗|✓|✓|
 
@@ -212,14 +212,14 @@ Misma **referencia**
 
 <summary>Respuesta</summary>
 
-Mismo **contenido**
+Misma **referencia**
 
 ||a|b|c|d|e|f|
 |-|-|-|-|-|-|-|
-|**a**|✓|✓|✓|✓|✗|✗|
-|**b**|✓|✓|✓|✓|✗|✗|
-|**c**|✓|✓|✓|✓|✗|✗|
-|**d**|✓|✓|✓|✓|✗|✗|
+|**a**|✓|✓|✗|✗|✗|✗|
+|**b**|✓|✓|✗|✗|✗|✗|
+|**c**|✗|✗|✓|✓|✗|✗|
+|**d**|✗|✗|✓|✓|✗|✗|
 |**e**|✗|✗|✗|✗|✓|✓|
 |**f**|✗|✗|✗|✗|✓|✓|
 

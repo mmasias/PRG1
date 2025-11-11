@@ -122,11 +122,11 @@ Declaración y luego asignación|`int[] matriz4;`<br>`matriz4 = new int[]{1, 2, 
 
 |||||
 |-|-|-|-|
-|`=`|Asignación|`<referenciaV> = <direcciónV>`|Asigna la dirección a la referencia, siendo del mismo tipo.
-|`.length`|Longitud|`<direcciónV>.length`|Devuelve la longitud de la matriz.
-|`==`|Comparación|`<direcciónV-I> == <direcciónV-II>`|determina si dos direcciones a vectores del mismo tipo son iguales.
-|`!=`|Comparación|`<direcciónV-I> != <direcciónV-II>`|determina si dos direcciones a vectores del mismo tipo son distintas.
-|`[expresión]`||`<direcciónV-I>[expresión]`|accede a la variable que ocupa la posición dada por la expresión entera, numerada de cero al anterior a la longitud.
+|`=`|Asignación|`<referencia> = <matriz>`|Asigna la dirección de la matriz a la variable referencia.
+|`.length`|Longitud|`<referencia>.length`|Devuelve la longitud de la matriz.
+|`==`|Comparación|`<referencia-I> == <referencia-II>`|determina si dos referencias a vectores del mismo tipo son iguales.
+|`!=`|Comparación|`<referencia-I> != <referencia-II>`|determina si dos referencias a vectores del mismo tipo son distintas.
+|`[expresión]`||`<referencia-I>[expresión]`|accede a la variable que ocupa la posición dada por la expresión entera, numerada de cero al anterior a la longitud.
 
 </div>
 
@@ -223,7 +223,7 @@ Mismo **contenido**
 
 |De tipos primitivos|De tipos estructurados/compuesto|
 |-|-|
-Number, string, boolean, undefined|Las propias matrices pudiendo construir matrices de matrices de tipos primitivos, matrices bidimensionales, …​ matrices de matrices de …​ de tipos primitivos, matrices n-dimensionales
+`byte`, `short`, `int`, `long`, `float`, `double`, `char`, `boolean`|Las propias matrices pudiendo construir matrices de matrices de tipos primitivos, matrices bidimensionales, …​ matrices de matrices de …​ de tipos primitivos, matrices n-dimensionales
 
 </div>
 
@@ -285,7 +285,7 @@ Se puede iterar de modo habitual mediante bucles `for` (habitual) o `while` `do/
 #### for
 
 ```java
-for (int numero = 0; i < numeros.length; numero++) {
+for (int numero = 0; numero < numeros.length; numero++) {
     System.out.print(numeros[numero]);
 }
 ```
@@ -325,6 +325,14 @@ for (int number : numbers) {
     number = number * 2;  
 }
 System.out.println(numbers[0]);
+```
+
+Si se quiere modificar, se debe usar el bucle for tradicional
+
+```java
+for (int i = 0; i < numbers.length; i++) {
+    numbers[i] = numbers[i] * 2;  // Esto SÍ modifica el array
+}
 ```
 
 ### Consideraciones adicionales

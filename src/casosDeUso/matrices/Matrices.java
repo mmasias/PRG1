@@ -10,14 +10,14 @@ class Matrices {
         int[] fantasma = null;
         int[] copiaFantasma = fantasma;
 
-        System.out.println("Momento 1 - ¿Apuntan al mismo sitio?");
+        System.out.println("Momento 1 - Shine On You Crazy Diamond");
         System.out.println("1) original == alias -> " + (original == alias));
         System.out.println("2) original == independiente -> " + (original == independiente));
         System.out.println("3) independiente == espejo -> " + (independiente == espejo));
         System.out.println("4) fantasma == copiaFantasma -> " + (fantasma == copiaFantasma));
 
         System.out.println();
-        System.out.println("Momento 1 - ¿Tienen exactamente los mismos valores?");
+        System.out.println("Momento 1 bis - Come Together");
         boolean mismoContenido = original.length == independiente.length;
         for (int i = 0; i < original.length && mismoContenido; i++) {
             if (original[i] != independiente[i]) {
@@ -30,7 +30,7 @@ class Matrices {
         }
 
         System.out.println();
-        System.out.println("Momento 2 - ¿Las primitivas cambian el array?");
+        System.out.println("Momento 2 - Sympathy for the Devil");
         int primitiva1 = 1;
         int primitiva2 = 2;
         int[] desdePrimitivas = {primitiva1, primitiva2};
@@ -46,7 +46,7 @@ class Matrices {
         System.out.println("14) desdePrimitivas[1] sigue igual -> " + desdePrimitivas[1]);
 
         System.out.println();
-        System.out.println("Momento 3 - Clono a mano sin usar métodos");
+        System.out.println("Momento 3 - Comfortably Numb");
         int[] clonManual = new int[original.length];
         for (int i = 0; i < clonManual.length; i++) {
             clonManual[i] = original[i];
@@ -56,7 +56,7 @@ class Matrices {
         System.out.println("17) original[1] -> " + original[1]);
 
         System.out.println();
-        System.out.println("Momento 4 - Modifico referencias existentes");
+        System.out.println("Momento 4 - Start Me Up");
         alias[1] = 99;
         independiente[2] = 77;
         System.out.println("18) original[1] -> " + original[1]);
@@ -64,14 +64,14 @@ class Matrices {
         System.out.println("20) clonManual[1] -> " + clonManual[1]);
 
         System.out.println();
-        System.out.println("Momento 5 - alias deja de apuntar al original");
+        System.out.println("Momento 5 - Free Bird");
         alias = clonManual;
         alias[0] = -5;
         System.out.println("21) alias[0] -> " + alias[0]);
         System.out.println("22) original[0] -> " + original[0]);
 
         System.out.println();
-        System.out.println("Momento 6 - Intercambio referencias sin crear arrays nuevos");
+        System.out.println("Momento 6 - Jumpin' Jack Flash");
         int[] intercambio = independiente;
         independiente = alias;
         alias = intercambio;
@@ -81,7 +81,7 @@ class Matrices {
         System.out.println("26) espejo[2] -> " + espejo[2]);
 
         System.out.println();
-        System.out.println("Momento 7 - Construyo un nuevo array a partir del independiente");
+        System.out.println("Momento 7 - Stairway to Heaven");
         int[] reconstruido = new int[independiente.length];
         for (int i = 0; i < independiente.length; i++) {
             reconstruido[i] = independiente[independiente.length - 1 - i];
@@ -92,7 +92,7 @@ class Matrices {
         System.out.println("29) independiente[0] -> " + independiente[0]);
 
         System.out.println();
-        System.out.println("Momento 8 - El fantasma cobra vida");
+        System.out.println("Momento 8 - Wish You Were Here");
         fantasma = new int[] {7, 7, 7};
         copiaFantasma = fantasma;
         copiaFantasma[2] = -7;
@@ -101,7 +101,7 @@ class Matrices {
         System.out.println("32) copiaFantasma[2] -> " + copiaFantasma[2]);
 
         System.out.println();
-        System.out.println("Momento 9 - Estado final de las referencias");
+        System.out.println("Momento 9 - The End");
         System.out.println("33) original == clonManual -> " + (original == clonManual));
         System.out.println("34) independiente == clonManual -> " + (independiente == clonManual));
         System.out.println("35) alias == espejo -> " + (alias == espejo));

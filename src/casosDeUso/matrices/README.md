@@ -1,33 +1,32 @@
 # Matrices
 
-Estos casos de uso están pensados como guiones de prácticas. Cada “momento” es una escena numerada donde se debe anticipar la salida antes de ejecutar. 
-
-> <sub>*Cada escena lleva el nombre de una canción de rock clásico que resume su espíritu.*</sub>
-
 ## [`Matrices.java`](Matrices.java)
 
-|Momento|Canción|Por qué|Video|
+|Momento|¿Por qué?/¿Qué?/¿Para qué?|¿Cómo?|Canción|
 |-|-|-|-|
-|1|**Shine On You Crazy Diamond** (Pink Floyd)|Pone el foco en las referencias brillando: determinar qué variables apuntan al mismo “diamante” en memoria.|[YouTube](https://www.youtube.com/watch?v=3UBPgIYE9BA)|
-|1 bis|**Come Together** (The Beatles)|Aunque las referencias sean distintas, el contenido puede coincidir. Como la letra, se trata de “unirse” comparando valores.|[YouTube](https://www.youtube.com/watch?v=oolpPmuK2I8)|
-|2|**Sympathy for the Devil** (The Rolling Stones)|Las primitivas parecen inocentes pero “tientan” al alumnado: cambian fuera del array sin modificarlo, igual que un truco del diablo.|[YouTube](https://www.youtube.com/watch?v=vBecM3CQVD8)|
-|3|**Comfortably Numb** (Pink Floyd)|Clonar a mano es trabajo quirúrgico y paciente: una operación que adormece y requiere atención línea a línea.|[YouTube](https://www.youtube.com/watch?v=_FrOQC-zEog)|
-|4|**Start Me Up** (The Rolling Stones)|Aquí empiezan los cambios a viva voz: se manipulan referencias y se ve inmediatamente el efecto, como encender un motor.|[YouTube](https://www.youtube.com/watch?v=SGyOaCXr8Lw)|
-|5|**Free Bird** (Lynyrd Skynyrd)|Alias se libera del array original; la “ave” decide volar sola.|[YouTube](https://www.youtube.com/watch?v=QxIWDmmqZzY)|
-|6|**Jumpin' Jack Flash** (The Rolling Stones)|Intercambiar referencias sin crear arrays nuevos es un juego frenético de saltos entre variables.|[YouTube](https://www.youtube.com/watch?v=BnH5JEUGk5Q)|
-|7|**Stairway to Heaven** (Led Zeppelin)|Reensamblar el array construyendo uno nuevo “peldaño a peldaño”, invirtiendo los datos, recuerda a una escalera ascendente.|[YouTube](https://www.youtube.com/watch?v=QkF3oxziUI4)|
-|8|**Wish You Were Here** (Pink Floyd)|El array “fantasma” deja de ser null: deseábamos que estuviera aquí y finalmente aparece.|[YouTube](https://www.youtube.com/watch?v=IXdNnw99-Ic)|
-|9|**The End** (The Beatles)|Cierre sereno: una foto final de todas las referencias, como el último tema de un disco.|[YouTube](https://www.youtube.com/watch?v=12YEGnBPl-k)|
+|1|Entender qué referencias apuntan al mismo bloque de memoria; saber *qué* comparan `==` y `!=` y *para qué* sirve distinguirlas.|Declarar `original`, `alias`, `independiente`, `espejo`, `fantasma` y `copiaFantasma` y comparar con `==`. |  [*Shine on you crazy diamond*](https://www.youtube.com/watch?v=3UBPgIYE9BA) |
+|1 bis|Reforzar que “igual” no es “lo mismo”: comparar contenido para anticipar cuándo usar `Arrays.equals` o bucles manuales.|Recorrer `original` e `independiente`, y tratar aparte el caso `null`.|  [*Come together*](https://www.youtube.com/watch?v=oolpPmuK2I8) |
+|2|Mostrar que las primitivas son copias, no referencias compartidas, y por qué eso importa.|Crear un array con primitivas, cambiar las variables y comprobar que el array no cambia.|  [*Sympathy for the devil*](https://www.youtube.com/watch?v=vBecM3CQVD8) |
+|3|Practicar el clonado manual para valorar cuándo usar utilidades y por qué un clone superficial duplica contenido.|Copiar elemento a elemento y comparar direcciones y valores.|  [*Comfortably numb*](https://www.youtube.com/watch?v=_FrOQC-zEog) |
+|4|Ver el efecto inmediato de modificar referencias y cómo cambian varias variables a la vez.|Reasignar posiciones y comparar con alias/espajo.|  [*Start me up*](https://www.youtube.com/watch?v=SGyOaCXr8Lw) |
+|5|Explorar qué pasa cuando una referencia se separa del array original y se queda con un nuevo objeto.|Reasignar `alias` a un nuevo array y comparar valores.|  [*Free bird*](https://www.youtube.com/watch?v=QxIWDmmqZzY) |
+|6|Practicar intercambio de referencias sin crear arrays: el “para qué” es entender el modelo mental de punteros.|Hacer swaps entre `independiente` y `alias` con un temp.|  [*Jumpin' jack flash*](https://www.youtube.com/watch?v=BnH5JEUGk5Q) |
+|7|Construir un array nuevo a partir de otro para visualizar cuándo se pierde una referencia y por qué.|Invertir manualmente `independiente` en `reconstruido`.|  [*Stairway to heaven*](https://www.youtube.com/watch?v=QkF3oxziUI4) |
+|8|Recordar que `null` necesita encarnarse antes de usarse y practicar el acceso a referencias compartidas.|Crear `fantasma`, reasignarlo y comprobar aliasing.|  [*Wish you were here*](https://www.youtube.com/watch?v=IXdNnw99-Ic) |
+|9|Cerrar todas las ideas comprobando quién sigue apuntando a qué y asegurando que se entiende el estado final.|Crear un bloque final con referencias compartidas y comparar.|  [*The end*](https://www.youtube.com/watch?v=12YEGnBPl-k) |
 
 ## [`Matrices2.java`](Matrices2.java)
 
-|Momento|Canción|Por qué|Video|
+|Momento|¿Por qué?/¿Qué?/¿Para qué?|¿Cómo?|Canción|
 |-|-|-|-|
-|A|**A Day in the Life** (The Beatles)|Una panorámica inicial de todas las filas; como la canción, muestra varias “escenas” en un mismo día.|[YouTube](https://www.youtube.com/watch?v=usNsCeOV4GM)|
-|B|**Echoes** (Pink Floyd)|La misma fila sonando en varias posiciones: los cambios se reflejan como ecos.|[YouTube](https://www.youtube.com/watch?v=53N99Nim6WE)|
-|C|**Kashmir** (Led Zeppelin)|La matriz irregular rota filas; la progresión hipnótica recuerda al viaje constante de este tema.|[YouTube](https://www.youtube.com/watch?v=sfR_HWMzgyc)|
-|D|**Across the Universe** (The Beatles)|Las primitivas “viajan” al array pero luego siguen su propio curso; nada las altera de vuelta.|[YouTube](https://www.youtube.com/watch?v=PNd9tHoGjCs)|
-|E|**Under Pressure** (Queen & David Bowie)|Los huecos (filas null) generan tensión; hay que controlar antes de acceder.|[YouTube](https://www.youtube.com/watch?v=a01QQZyl-_I)|
-|F|**Back in Black** (AC/DC)|Las filas guardadas en el historial regresan; vuelven “de negro” tras poner la matriz principal a null.|[YouTube](https://www.youtube.com/watch?v=pAgnJDJN4VA)|
-|G|**Mirror in the Bathroom** (The Beat)|Copia superficial vs profunda: espejos deformados que muestran realidades distintas.|[YouTube](https://www.youtube.com/watch?v=BEaX9x-Ubdo)|
-|H|**Road to Nowhere** (Talking Heads)|El recorrido final, aceptando filas null, es un paseo inevitable por todos los valores presentes.|[YouTube](https://www.youtube.com/watch?v=LQI7zHNcMfQ)|
+|A|Panorámica inicial para ver qué es cada fila y cómo se comportan las referencias en 2D.|Comparar referencias entre filas de una matriz rectangular.| [*A day in the life*](https://www.youtube.com/watch?v=usNsCeOV4GM)|
+|B|Demostrar que una misma fila puede repetirse y reflejar cambios como un eco.|Reutilizar `unaFila` en varias posiciones y alterar un valor.| [*Echoes*](https://www.youtube.com/watch?v=53N99Nim6WE)|
+|C|Introducir matrices irregulares y la rotación de filas como intercambio de referencias.|Realizar swaps en un array ragged.| [*Kashmir*](https://www.youtube.com/watch?v=sfR_HWMzgyc)|
+|D|Reforzar que las primitivas copian valores incluso dentro de arrays bidimensionales.|Crear filas desde primitivas y mostrar que luego siguen igual.| [*Across the universe*](https://www.youtube.com/watch?v=PNd9tHoGjCs)|
+|E|Ilustrar la importancia de controlar filas `null` y cómo evitar `NullPointerException`.|Verificar `permiteNull` antes de acceder.| [*Under pressure*](https://www.youtube.com/watch?v=a01QQZyl-_I)|
+|F|Mostrar el concepto de “historial” y cómo rescatar filas tras perder la matriz original.|Guardar y reconstruir filas desde otra estructura.| [*Back in black*](https://www.youtube.com/watch?v=pAgnJDJN4VA)|
+|G|Comparar copia superficial vs profunda en 2D: para entender aliasing en matrices.|Clonar fila por fila y alterar cada copia.| [*Mirror in the mathroom*](https://www.youtube.com/watch?v=BEaX9x-Ubdo)|
+|H|Ejercitar un recorrido final respetando `null`, reforzando el control de huecos.|Recorrer manualmente columnas y simular for-each.| [*Road to nowhere*](https://www.youtube.com/watch?v=LQI7zHNcMfQ)|
+|I|Confirmar que clonar filas evita que los cambios externos rompan el “muro”.|Clonar `brickFila` antes de reasignar la referencia local.| [*Another brick in the wall*](https://www.youtube.com/watch?v=YR5ApYxkU-U)|
+|J|Evidenciar cómo un clon protege del “delito” de modificar el original.|Clonar `original`, cambiar el original y comparar.| [*Breaking the law*](https://www.youtube.com/watch?v=ps_Mm6f_z8M)|
+|K|Dar un guiño a la tercera dimensión: comprobar accesos en 3 niveles y reconocer `null` intermedio.|Crear un `int[][][]` y mostrar accesos válidos y huecos.| [*Stairway to heaven*](https://www.youtube.com/watch?v=QkF3oxziUI4)|

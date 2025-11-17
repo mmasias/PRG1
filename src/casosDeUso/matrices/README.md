@@ -1,3 +1,10 @@
+<div align=right>
+
+|[![](https://img.shields.io/badge/-Playlist-FFF?style=flat&logo=spotify)](https://open.spotify.com/playlist/5GkfEI8f3B2PJou79lGP2x?si=a457980778d34971)
+|-
+
+</div>
+
 # Matrices
 
 ## [`Matrices.java`](Matrices.java)
@@ -30,3 +37,4 @@
 |I|Confirmar que clonar filas evita que los cambios externos rompan el “muro”.|Clonar `brickFila` antes de reasignar la referencia local.| [*Another brick in the wall*](https://www.youtube.com/watch?v=YR5ApYxkU-U)|
 |J|Evidenciar cómo un clon protege del “delito” de modificar el original.|Clonar `original`, cambiar el original y comparar.| [*Breaking the law*](https://www.youtube.com/watch?v=L397TWLwrUU)|
 |K|Dar un guiño a la tercera dimensión: comprobar accesos en 3 niveles y reconocer `null` intermedio.|Crear un `int[][][]` y mostrar accesos válidos y huecos.| [*¿Qué se puede hacer salvo ver películas?*](https://www.youtube.com/watch?v=6Lk5FrtASVo)|
+

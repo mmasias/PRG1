@@ -186,7 +186,7 @@ class Matrices2 {
         }
 
         System.out.println();
-        System.out.println("Momento K - Stairway to Heaven");
+        System.out.println("Momento K - ¿Qué se puede hacer salvo ver películas?");
         {
             int[][][] terceraDimension = {
                 { {1}, {2, 3} },

@@ -5,8 +5,12 @@ import java.util.Scanner;
 class Matrices {
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento 1");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[] original = { 1, 2, 3 };
             int[] alias = original;
@@ -21,10 +25,11 @@ class Matrices {
             System.out.println("4) fantasma == copiaFantasma -> " + (fantasma == copiaFantasma));
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento 1 bis");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[] original = { 1, 2, 3 };
             int[] independiente = { 1, 2, 3 };
@@ -42,10 +47,11 @@ class Matrices {
             }
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento 2");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int primitiva1 = 1;
             int primitiva2 = 2;
@@ -62,10 +68,11 @@ class Matrices {
             System.out.println("14) desdePrimitivas[1] sigue igual -> " + desdePrimitivas[1]);
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento 3");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[] original = { 1, 2, 3 };
             int[] clonManual = new int[original.length];
@@ -77,10 +84,11 @@ class Matrices {
             System.out.println("17) original[1] -> " + original[1]);
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento 4");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[] original = { 1, 2, 3 };
             int[] alias = original;
@@ -93,10 +101,11 @@ class Matrices {
             System.out.println("20) alias[1] -> " + alias[1]);
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento 5");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[] original = { 1, 2, 3 };
             int[] alias = original;
@@ -105,10 +114,11 @@ class Matrices {
             System.out.println("22) original[0] -> " + original[0]);
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento 6");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[] clonManual = { 10, 20, 30 };
             int[] independiente = clonManual;
@@ -123,10 +133,11 @@ class Matrices {
             System.out.println("26) espejo[2] -> " + espejo[2]);
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento 7");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[] independiente = { 5, 6, 7, 8 };
             int[] reconstruido = new int[independiente.length];
@@ -138,10 +149,11 @@ class Matrices {
             System.out.println("29) independiente[0] -> " + independiente[0]);
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento 8");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[] fantasma = null;
             int[] copiaFantasma = null;
@@ -153,10 +165,11 @@ class Matrices {
             System.out.println("32) copiaFantasma[2] -> " + copiaFantasma[2]);
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento 9");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[] original = { 1, 2, 3 };
             int[] clonManual = original;
@@ -170,5 +183,7 @@ class Matrices {
             System.out.println("35) alias == espejo -> " + (alias == espejo));
             System.out.println("36) fantasma == copiaFantasma -> " + (fantasma == copiaFantasma));
         }
+
+        scanner.close();
     }
 }

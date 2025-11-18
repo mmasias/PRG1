@@ -5,8 +5,12 @@ import java.util.Scanner;
 class Matrices2 {
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento A");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[][] tabla = {
                     { 1, 2, 3 },
@@ -18,10 +22,11 @@ class Matrices2 {
             System.out.println("3) tabla[1] == tabla[2] -> " + (tabla[1] == tabla[2]));
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento B");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[] unaFila = { 1, 2, 3 };
             int[][] tablaCompartida = {
@@ -38,10 +43,11 @@ class Matrices2 {
             System.out.println("8) tablaCompartida[1][0] -> " + tablaCompartida[1][0]);
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento C");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[][] ragged = {
                     { 1, 2, 3 },
@@ -60,10 +66,11 @@ class Matrices2 {
             System.out.println("14) ragged[2][0] -> " + ragged[2][0]);
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento D");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int primitivaFilaA = 10;
             int primitivaFilaB = 20;
@@ -83,10 +90,11 @@ class Matrices2 {
             System.out.println("22) desdePrimitivas[0][1] sigue igual -> " + desdePrimitivas[0][1]);
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento E");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[][] permiteNull = {
                     { 1, 666, 3 },
@@ -105,10 +113,11 @@ class Matrices2 {
             System.out.println("26) permiteNull[2] == null -> " + (permiteNull[2] == null));
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento F");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[][] tablaOriginal = {
                     { 1, 2, 3 },
@@ -129,10 +138,11 @@ class Matrices2 {
             System.out.println("31) tablaReconstruida[2] == historial[0] -> " + (tablaReconstruida[2] == historial[0]));
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento G");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[][] tabla = {
                     { 1, 2, 3 },
@@ -155,10 +165,11 @@ class Matrices2 {
             System.out.println("35) copiaProfunda[2][copiaProfunda[2].length-1] -> " + copiaProfunda[2][copiaProfunda[2].length - 1]);
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento H");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[][] tabla = {
                     { 7, 8, 9 },
@@ -174,10 +185,11 @@ class Matrices2 {
             System.out.println("42) valor -> " + tabla[2][2]);
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento I");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[] brickFila = { 1, 2, 3 };
             int[][] matrizInmutable = {
@@ -189,10 +201,11 @@ class Matrices2 {
             System.out.println("43) ¿Se rompió el muro? -> " + (matrizInmutable[0][0] == 1));
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento J");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[] original = { 1, 2, 3 };
             int[][] matrizConClone = {
@@ -206,10 +219,11 @@ class Matrices2 {
             System.out.println("47) matrizConClone[0][0] después -> " + matrizConClone[0][0]);
         }
 
-        (new Scanner(System.in)).nextLine();
-        System.out.println();
+        scanner.nextLine();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         System.out.println("Momento K");
-        (new Scanner(System.in)).nextLine();
+        scanner.nextLine();
         {
             int[][][] terceraDimension = {
                     { { 1 }, { 2, 3 } },
@@ -220,5 +234,7 @@ class Matrices2 {
             System.out.println("49) terceraDimension[2][0][2] -> " + terceraDimension[2][0][2]);
             System.out.println("50) terceraDimension[1] == null -> " + (terceraDimension[1] == null));
         }
+
+        scanner.close();
     }
 }

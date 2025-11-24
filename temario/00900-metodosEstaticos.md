@@ -70,7 +70,7 @@ class UnaClase {
 
 - **Cohesión**: Los métodos estáticos deben ser cohesivos, es decir, deben tener una única responsabilidad o propósito. Esto significa que cada método estático debe hacer una cosa y hacerla bien, lo cual facilita su comprensión y mantenimiento.
 
-- **Organización lógica**: Los métodos estáticos deben organizarse de tal manera que estén relacionados lógicamente. 
+- **Organización lógica**: Los métodos estáticos deben organizarse de tal manera que estén relacionados lógicamente.
 
 - **Independencia**: Deben diseñarse para ser independientes de los estados.
 
@@ -97,3 +97,8 @@ Escalabilidad: En aplicaciones grandes y complejas, el uso excesivo de métodos 
 
 - **Transición a objetos**: Incluso en programación estructurada, los métodos estáticos pueden ayudar a entender la organización y la abstracción de funciones en lo que eventualmente serán clases y objetos. Es recomendable usarlos como un puente hacia la programación orientada a objetos, sin perder de vista que el paradigma orientado a objetos ofrece muchas más herramientas para la organización y estructuración del código.
 
+## ¿Y ahora qué?
+
+- [Anatomía de los métodos estáticos](00901-anatomiaMetodosEstaticos.md)
+- [Del caos al orden: Refactorización con métodos](00902-refactorizacionConMetodos.md)
+- [Cuándo extraer métodos: Señales de alarma](00903-cuandoExtraerMetodos.md)

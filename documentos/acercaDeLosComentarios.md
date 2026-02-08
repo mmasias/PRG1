@@ -53,7 +53,18 @@ El objetivo no es eliminar toda comunicación escrita sobre el código, sino con
 String emailPattern = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
 ```
 
-Justificable cuando la alternativa sería crear abstracción excesiva para código que se ejecuta una vez. Usar con extrema moderación.
+Justificable cuando la alternativa sería crear abstracción excesiva para código que se ejecuta una vez. Usar con extrema moderación, porque incluso este comentario podría reescribirse así:
+
+
+```java
+String USUARIO = "[a-zA-Z0-9_+&*-]+";
+String SUBPARTES = "(?:\\.[a-zA-Z0-9_+&*-]+)*";
+String ARROBA = "@";
+String DOMINIO = "(?:[a-zA-Z0-9-]+\\.)+";
+String TLD = "[a-zA-Z]{2,7}";
+
+String emailPattern = "^" + USUARIO + SUBPARTES + ARROBA + DOMINIO + TLD + "$";
+```
 
 ### Comentarios tolerables
 

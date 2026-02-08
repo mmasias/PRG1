@@ -9,3 +9,4 @@
 - [Plantillas de trabajo](plantillas.md), porque no hay que reinventar la rueda, ni el agua tibia.
 - [Expresiones regulares](expresionesRegulares.md). Conviene leerlo, saber que existen. Si se pueden empezar a entender, mejor.
 - [Diversos casos de uso](/temario/casosDeUso/README.md), para ser estudiados, evaluar como se emplean los diversos elementos en la construcción de un programa y ser utilizados con criterio.
+- [Comentarios acerca de los `// comentarios`](acercaDeLosComentarios.md). Cada vez que se escribe un comentario, se debe preguntar: ¿puedo hacer que el código sea lo suficientemente claro para que este comentario sea innecesario? La respuesta casi siempre es sí.

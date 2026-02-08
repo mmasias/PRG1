@@ -87,10 +87,38 @@ Marca decisiones técnicas pendientes. Debe incluir fecha y responsable. Debe re
 
 <div align=center>
 
-|Con comentario redundante|Sin comentario|
-|-|-|
-|```java```<br>```// Incrementa el contador```<br>```contador++;```|```java```<br>```contador++;```|
-|```java```<br>```// Constructor de la clase Persona```<br>```public Persona() { }```|```java```<br>```public Persona() { }```|
+<table>
+<tr><th>Con comentario redundante</th><th>Sin comentario</th></tr>
+<tr><td valign=top>
+
+```java
+// Incrementa el contador
+contador++;
+```
+</td>
+<td valign=top>
+
+
+```java
+contador++;
+```
+</td></tr>
+<tr><td valign=top>
+
+```java
+// Constructor de la clase Persona
+public Persona() {
+```
+</td>
+<td valign=top>
+
+
+
+```java
+public Persona() {
+```
+</td></tr>
+</table>
 
 </div>
 
@@ -100,9 +128,39 @@ El código ya dice exactamente lo que hace. El comentario no aporta información
 
 <div align=center>
 
-|Con comentarios de sección|Sin comentarios|
-|-|-|
-|```java```<br>```// ============```<br>```// Métodos públicos```<br>```// ============```<br>```public void iniciar() { }```<br><br>```// ============```<br>```// Métodos privados```<br>```// ============```<br>```private void procesar() { }```|```java```<br>```public void iniciar() { }```<br><br>```private void procesar() { }```|
+<table>
+<tr><th>Con comentario de sección</th><th>Sin comentario</th></tr>
+<tr><td valign=top>
+
+```java
+// ============
+// Métodos públicos
+// ============
+public void iniciar() {
+    (...)
+}
+
+// ============
+// Métodos privados
+// ============
+private void procesar() {
+    (...)
+}
+```
+
+</td><td valign=top>
+
+```java
+public void iniciar() {
+    (...)
+}
+
+private void procesar() {
+    (...)    
+}
+```
+</td></tr>
+</table>
 
 </div>
 
@@ -227,7 +285,7 @@ El comentario dice "retorna true". El método ya dice eso en su firma: `boolean 
 #### Comentarios de atribución
 
 ```java
-// Modificado por Juan Pérez - 15/01/2024
+// Modificado por Ibuprofeno Fernández y Dalsy Gómez - 15/01/2024
 // Agregada validación de email
 public void registrarUsuario(String email) {
     // implementación

@@ -95,13 +95,16 @@ Un operando situado entre dos operadores pertenece al de mayor precedencia. En `
 
 |Nivel|Tipo|Operadores|Asociatividad|
 |:-:|-|-|-|
-|1 (máx)|Unarios|`+` `-` `!`|derecha a izquierda|
-|2|Multiplicativos|`*` `/` `%`|izquierda a derecha|
-|3|Aditivos|`+` `-`|izquierda a derecha|
-|4|Relacionales|`<` `>` `<=` `>=`|no asociativo (*)|
-|5|Igualdad|`==` `!=`|izquierda a derecha|
-|6|Y lógico|`&&`|izquierda a derecha|
-|7 (mín)|O lógico|`\|\|`|izquierda a derecha|
+|1 (máx)|Postfijos|`expr++` `expr--`|no aplica|
+|2|Unarios|`++expr` `--expr` `+expr` `-expr` `!` `(tipo)`|derecha a izquierda|
+|3|Multiplicativos|`*` `/` `%`|izquierda a derecha|
+|4|Aditivos|`+` `-`|izquierda a derecha|
+|5|Relacionales|`<` `>` `<=` `>=`|no asociativo (*)|
+|6|Igualdad|`==` `!=`|izquierda a derecha|
+|7|Y lógico|`&&`|izquierda a derecha|
+|8|O lógico|`\|\|`|izquierda a derecha|
+|9|Ternario|`? :`|derecha a izquierda|
+|10 (mín)|Asignación|`=` `+=` `-=` `*=` `/=` `%=`|derecha a izquierda|
 
 </div>
 

@@ -93,20 +93,21 @@ Un operando situado entre dos operadores pertenece al de mayor precedencia. En `
 
 <div align=center>
 
-|Nivel|Operadores|Asociatividad|
-|:-:|-|-|
-|1|`expr++` `expr--`|-
-|2|`++expr` `--expr` `+expr` `-expr` `!` `(tipo)`|derecha a izquierda
-|3|`*` `/` `%`|izquierda a derecha
-|4|`+` `-`|izquierda a derecha
-|5|`<` `>` `<=` `>=`|izquierda a derecha
-|6|`==` `!=`|izquierda a derecha
-|7|`&&`|izquierda a derecha
-|8|`\|\|`|izquierda a derecha
-|9|`? :`|derecha a izquierda
-|10|`=` `+=` `-=` `*=` `/=` `%=`|derecha a izquierda
+|Nivel|Tipo|Operadores|Asociatividad|
+|:-:|-|-|-|
+|1 (máx)|Unarios|`+` `-` `!`|derecha a izquierda|
+|2|Multiplicativos|`*` `/` `%`|izquierda a derecha|
+|3|Aditivos|`+` `-`|izquierda a derecha|
+|4|Relacionales|`<` `>` `<=` `>=`|no asociativo (*)|
+|5|Igualdad|`==` `!=`|izquierda a derecha|
+|6|Y lógico|`&&`|izquierda a derecha|
+|7 (mín)|O lógico|`\|\|`|izquierda a derecha|
 
 </div>
+
+(*) Los relacionales no se pueden encadenar: `a < b < c` no compila.
+
+Los paréntesis rompen las reglas de precedencia y asociatividad.
 
 La tabla incluye solo los operadores de esta asignatura. La tabla completa, con operadores de bits, de desplazamiento e `instanceof`, está en la [documentación de Oracle](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html).
 

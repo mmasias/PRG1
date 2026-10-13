@@ -207,7 +207,7 @@ if (x < 15) {
 
 ### Operador ternario
 
-Para asignaciones simples basadas en condiciones, existe el [operador ternario](../documentos/ternarioOif.md):
+Para asignaciones simples basadas en condiciones, existe el [operador ternario](00510-operadores.md#operador-ternario):
 
 ```java
 int max = (a > b) ? a : b;

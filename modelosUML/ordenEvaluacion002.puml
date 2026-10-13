@@ -1,0 +1,17 @@
+@startuml
+title i++ * 2 + i
+skinparam defaultTextAlignment center
+skinparam ArrowColor #555555
+hide stereotype
+rectangle "**+**\n(5) 2 + 2 = 4" as suma
+rectangle "*****\n(3) 1 * 2 = 2" as izq
+rectangle "**i**\n(4) lee 2" as der
+rectangle "**i++**\n(1) devuelve 1; i pasa a 2" as hi
+rectangle "**2**\n(2) 2" as hd
+suma -down- izq
+suma -down- der
+izq -down- hi
+izq -down- hd
+izq -[hidden]right- der
+hi -[hidden]right- hd
+@enduml

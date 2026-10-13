@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="337px" preserveAspectRatio="none" style="width:339px;height:337px;" version="1.1" viewBox="0 0 339 337" width="339px" zoomAndPan="magnify"><defs><filter height="300%" id="f1j57pcapz16zy" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="80" x="133" y="19.2419">i++ * 2 + i</text><!--MD5=[6e3b50886ef4c2b88c558b2f80a05c6a]
+entity suma--><rect fill="#FEFECE" filter="url(#f1j57pcapz16zy)" height="58.1358" style="stroke: #000000; stroke-width: 1.5;" width="96" x="184" y="32.1058"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="8" x="228" y="57.0718">+</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="76" x="194" y="76.1397">(5) 2 + 2 = 4</text><!--MD5=[19fb468af7a63f63c89dc882436f1a08]
+entity izq--><rect fill="#FEFECE" filter="url(#f1j57pcapz16zy)" height="58.1358" style="stroke: #000000; stroke-width: 1.5;" width="96" x="125" y="150.2458"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="8" x="169" y="175.2118">*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="76" x="135" y="194.2797">(3) 1 * 2 = 2</text><!--MD5=[6ffff872e8c31e386d67ffb3eac26bd4]
+entity der--><rect fill="#FEFECE" filter="url(#f1j57pcapz16zy)" height="58.1358" style="stroke: #000000; stroke-width: 1.5;" width="72" x="256" y="150.2458"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="4" x="290" y="175.2118">i</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="52" x="266" y="194.2797">(4) lee 2</text><!--MD5=[099903a3b53ebf674f0d25718e161399]
+entity hi--><rect fill="#FEFECE" filter="url(#f1j57pcapz16zy)" height="58.1358" style="stroke: #000000; stroke-width: 1.5;" width="184" x="6" y="268.3758"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="20" x="88" y="293.3418">i++</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="164" x="16" y="312.4097">(1) devuelve 1; i pasa a 2</text><!--MD5=[49264721a945ddd9b988dd9a21cfff40]
+entity hd--><rect fill="#FEFECE" filter="url(#f1j57pcapz16zy)" height="58.1358" style="stroke: #000000; stroke-width: 1.5;" width="48" x="225" y="268.3758"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="8" x="245" y="293.3418">2</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="235" y="312.4097">(2) 2</text><!--MD5=[1bd0641a0a5d98acd8abce1273bc2d0a]
+link suma to izq--><path d="M217.57,90.5858 C208.42,108.5858 196.64,131.7758 187.49,149.7958 " fill="none" id="suma-izq" style="stroke: #555555; stroke-width: 1.0;"/><!--MD5=[19e2521ca31dec6fa1772c318669bf87]
+link suma to der--><path d="M246.68,90.5858 C255.98,108.5858 267.96,131.7758 277.27,149.7958 " fill="none" id="suma-der" style="stroke: #555555; stroke-width: 1.0;"/><!--MD5=[737e9a3d00345042014073894ee891bd]
+link izq to hi--><path d="M154.65,208.7258 C143.03,226.7158 128.05,249.9158 116.42,267.9258 " fill="none" id="izq-hi" style="stroke: #555555; stroke-width: 1.0;"/><!--MD5=[cd8585b6b2723b72007ddd0a996017ff]
+link izq to hd--><path d="M191.59,208.7258 C203.37,226.7158 218.55,249.9158 230.34,267.9258 " fill="none" id="izq-hd" style="stroke: #555555; stroke-width: 1.0;"/><!--MD5=[ae158338e7ca18845ed4f0e3bbb762d3]
+link izq to der--><!--MD5=[e6efa0be60c50edc85c8d8b2e111f143]
+link hi to hd--><!--MD5=[eac382def756209db5e132590393a50e]
+@startuml
+title i++ * 2 + i
+skinparam defaultTextAlignment center
+skinparam ArrowColor #555555
+hide stereotype
+rectangle "**+**\n(5) 2 + 2 = 4" as suma
+rectangle "*****\n(3) 1 * 2 = 2" as izq
+rectangle "**i**\n(4) lee 2" as der
+rectangle "**i++**\n(1) devuelve 1; i pasa a 2" as hi
+rectangle "**2**\n(2) 2" as hd
+suma -down- izq
+suma -down- der
+izq -down- hi
+izq -down- hd
+izq -[hidden]right- der
+hi -[hidden]right- hd
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 11:22:07 CET 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 25.0.4.1+1-1-26.04.4-Ubuntu
+Operating System: Linux
+Default Encoding: UTF-8
+Language: es
+Country: ES
+--></g></svg>

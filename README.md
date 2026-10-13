@@ -7,6 +7,8 @@
   - [x] [Java](temario/00300-java.md)
   - [x] [Salida por consola](temario/00400-salidaJava.md)
   - [x] [Variables](temario/00500-variables.md)
+    - [ ] [Operadores adicionales](temario/00510-operadores.md)
+    - [ ] [Expresiones](temario/00520-expresiones.md)
   - [x] [Entrada por consola](temario/00600-entradaJava.md)
 - **Programación estructurada**
   - [x] [Estructuras de control](temario/00700-estructurasDeControl.md)

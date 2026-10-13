@@ -102,7 +102,7 @@ Una vez declarada la variable, mediante el *operador de asignación*.
 
 </div>
 
-> ***Expresión***: Literal, variable o secuencia de operaciones entre literales y/o variables que produce un valor.
+> ***Expresión***: Literal, variable o secuencia de operaciones entre literales y/o variables que produce un valor. Se desarrolla en [Expresiones](00520-expresiones.md).
 
 ### "Pequeñas" anécdotas sobre la asignación
 
@@ -139,7 +139,7 @@ Asigna/actualiza/"iguala" a la variable identificada a la izquierda el resultado
 
 #### Valores numéricos: aritméticos
 
-Operan sobre valores numéricos del mismo tipo, y devuelven un valor del tipo de los operandos (menos *byte*, *short* y *char*, que devuelven *int*)
+Operan sobre valores numéricos del mismo tipo, y devuelven un valor del tipo de los operandos (menos *byte*, *short* y *char*, que devuelven *int*). La combinación de tipos distintos se trata en [conversión de tipos](00510-operadores.md#conversión-de-tipos).
 
 <div align=center>
 
@@ -152,6 +152,10 @@ Operan sobre valores numéricos del mismo tipo, y devuelven un valor del tipo de
 %|el resto de la división entera de dos expresiones.
 
 </div>
+
+Entre dos enteros, `/` es la división entera: `7 / 2` vale `3`, no `3.5`.
+
+Los operadores `-` y `+` también existen como unarios (un solo operando, a su derecha): `-x` devuelve el valor de `x` con el signo cambiado, sin modificar `x`.
 
 #### String: concatenación
 
@@ -254,45 +258,19 @@ De acuerdo a esto, entonces:
 
 </div>
 
-### El operador ternario
+### Operadores lógicos
+
+Operan sobre valores de tipo `boolean` y devuelven un valor de tipo `boolean`.
+
+#### Unario
 
 <div align=center>
 
-```
-<expresión> ? <expresión> : <expresión> 
-```
-</div>
-
-El operador ternario evalua una expresión y devuelve la evaluación del segundo argumento si la evaluación del primer argumento resulta cierto o la evaluación del tercero argumento en caso contrario.
-
-```java
-final int MAYORIA_DE_EDAD = 18;
-int edad = 20;
-boolean mayorDeEdad = edad > MAYORIA_DE_EDAD ? true : false;
-```
-
-<!-- TODO: #2 extender la reflexión sobre los operadores -->
-<!-- TODO: #3 extender la reflexión sobre la precedencia -->
-### Operador paréntesis
-
-El operador paréntesis devuelve la evaluación de la expresión anidada.
-
-#### #2Think
-
-<div align=center>
-
-|||
-|-|:-:|
-```100/(2-1)```|¿100 o 49?
-```4>=7 && (2==4 \|\| 5<6)```|¿false o true?
-```100/(2/2)```|¿100 o 25?
-```1-(1-1)```|¿1 o -1?
-```5 * (4+4) * 2```|¿80 o 28?
-```(5+4) / (4+2)```|¿1 u 8?
+||||
+|-|-|-|
+|!|no-lógico|Devuelve `true` si la expresión es falsa y `false` si es verdadera
 
 </div>
-
-### Operador lógico
 
 #### Binario
 
@@ -300,16 +278,15 @@ El operador paréntesis devuelve la evaluación de la expresión anidada.
 
 ||||
 |-|-|-|
-|&&|y-lógico|Devuelve la evaluación de la primera expresión, (no necesariamente verdadero), cuando ambos operandos se evalúan a verdadero. Si la primera expresión es falsa, devuelve falso sin evaluar la segunda expresión
-|\|\||o-lógico|Devuelve la evaluación de la primera expresión, (no necesariamente true) cuando es verdadera o, caso contrario, la evaluación de la segunda expresión cuando es cierta. Solo devuelve falso si ambas son falsas
+|&&|y-lógico|Devuelve `true` si ambas expresiones son verdaderas. Si la primera es falsa, devuelve `false` sin evaluar la segunda
+|\|\||o-lógico|Devuelve `true` si al menos una de las expresiones es verdadera. Si la primera es verdadera, devuelve `true` sin evaluar la segunda
 
 </div>
 
 ##### A tener en cuenta
 
 - **Cortocircuito**: Tanto && como || utilizan evaluación de cortocircuito. Esto significa que si el resultado se puede determinar evaluando solo la primera expresión, la segunda no se evalúa.
-- **Devolución de valores**: Estos operadores no devuelven necesariamente true o false, sino el resultado de la última expresión evaluada.
-- **Uso con tipos no booleanos**: En Java, a diferencia de algunos otros lenguajes, && y || solo pueden usarse con operandos booleanos.
+- **Uso con tipos no booleanos**: En Java, a diferencia de otros lenguajes (C, JavaScript, Python), `!`, `&&` y `||` solo admiten operandos booleanos y siempre devuelven un `boolean`. `!5` o `5 && 3` no compilan.
 
 <div align=center>
 
@@ -328,3 +305,7 @@ El operador paréntesis devuelve la evaluación de la expresión anidada.
 |`System.out.println(x);`|Imprime: 5
 
 </div>
+
+### Más operadores
+
+El operador ternario, la conversión de tipos, la asignación compuesta y el incremento/decremento se tratan en [Operadores adicionales](00510-operadores.md). Los paréntesis, la precedencia y la asociatividad, en [Expresiones](00520-expresiones.md).

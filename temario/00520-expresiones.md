@@ -24,7 +24,7 @@ Toda expresión tiene:
 
 <div align=center>
 
-|Expresión|Tipo|Valor (con `edad = 20`)|
+|Expresión|Tipo|Valor (con `int edad = 20`)|
 |-|-|-|
 |`20`|`int`|`20`
 |`edad / 3`|`int`|`6`

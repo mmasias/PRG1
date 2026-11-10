@@ -9,11 +9,15 @@ Preste especial atención a los índices de acceso a los elementos de la matriz.
 Preste especial atención a si una matriz es nula o está vacía antes de trabajar con ella
 
 ```java
-    if (matriz == null) 
+    if (matriz == null) {
         System.out.println("La matriz es nula");
+    }
+        
 
-    if (matriz.length == 0) 
+    if (matriz.length == 0) {
         System.out.println("La matriz está vacía");
+    }
+        
 ```
 
 ## Elección de estructura de datos
